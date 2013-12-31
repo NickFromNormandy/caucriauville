@@ -1,6 +1,6 @@
 
-#load "str.cma";;
-
+(* #load "str.cma";; *)
+ 
 (*
    The goal is to:
  
@@ -14,6 +14,11 @@
 module StringMap = Map.Make(String);;
 module SetOfInt = Set.Make(struct type t = int let compare = compare end);;
 
+(* 
+
+
+ *)
+
 let find_max my_map =
   let max_values = ref SetOfInt.empty in
   let min_elem = SetOfInt.min_elt !max_values in
@@ -21,6 +26,11 @@ let find_max my_map =
     max_values :=  SetOfInt.add my_value !max_values in
   StringMap.iter find_max my_map;
   !max_values;;
+
+
+(*
+
+ *)
           
 let compute_new_map my_key my_map = 
   if (StringMap.mem my_key my_map) then 
@@ -28,13 +38,25 @@ let compute_new_map my_key my_map =
      StringMap.add my_key (value+1) my_map)
   else (StringMap.add my_key 1 my_map);;
 
+(*
+
+ *)
+
 let my_word_to_count my_list_of_words =
   let rec compute_word_to_count my_list_of_words my_map =
     match my_list_of_words with
       [] -> my_map
     | head::tail -> compute_word_to_count tail (compute_new_map head my_map)  in
   compute_word_to_count my_list_of_words StringMap.empty;;
-  
+
+
+(*
+   read a file denoted by the variable filename
+   return a list of words
+   each word belong to one of the lines.
+   a word is a sequence of letter (lower or upper case)
+
+ *)  
 let read_file filename = 
   let lines = ref [] in
   let chan = open_in filename in
@@ -49,6 +71,9 @@ let read_file filename =
     close_in chan;
     List.rev !lines ;;
 
+(*
+
+ *)
 let rec print_my_list myStringMap myString =
   match myString with
     [] -> print_string "The list is empty"; myStringMap
