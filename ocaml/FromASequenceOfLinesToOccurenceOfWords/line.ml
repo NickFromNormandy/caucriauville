@@ -50,7 +50,8 @@ module Line =
 
 
     (** Read a file d by filename
-        - return a list of words
+        - create a map words -> occurence
+        - create a map occurence -> words
         - each word belongs to excatly one line 
         - there is duplicated word in the list
         - a word is a sequence of letters 
@@ -145,6 +146,15 @@ module Line =
     (** Create the list of words and then create the map that will mach each word with its occurence*)
     let myMapWordToOccurence = create_a_map_word_occurence_from_a_text_file "toto.txt" in
         let myMapOccurenceToWord = (create_map_occurence_to_word myMapWordToOccurence) in
+	let number_of_words = ref 0 in
+	let count_words word occurence = number_of_words := !number_of_words + occurence in
+	(print_string "Numer of words in the file");
+	(StringMap.iter count_words myMapWordToOccurence);
+	(print_int !number_of_words);
+	(print_string "\n");
+	(print_string "Number of unique words in the file");
+	(print_int (StringMap.cardinal myMapWordToOccurence));
+	(print_string "\n");
 	(print_word_to_occurence myMapWordToOccurence);
 	(print_occurence_to_word myMapOccurenceToWord);
         myMapWordToOccurence;;
