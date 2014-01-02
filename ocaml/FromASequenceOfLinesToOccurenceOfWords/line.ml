@@ -90,8 +90,14 @@ module Line =
 	  my_list_of_words 
 	with 
 	  [] -> print_string "\n"
-	| head::tail -> print_string head;
-			print_string ",";
+	| 
+	  head::tail -> print_string head;
+			match 
+			  tail
+			with
+			  [] -> print_string "]";
+			|
+			  head2::tail2 -> print_string ",";
 			counter := !counter+1;
 			if ((!counter mod 10)= 0) then print_string "\n";
 			print_it tail 
