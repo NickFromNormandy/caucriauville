@@ -40,14 +40,13 @@ module Line =
    - the number of occurence the word in the list will be part of the range of the map.
    - the map will have a word and its number of occurence
      *)
-
-    let create_a_map_word_occurence_from_listofwords my_list_of_words =
+    let create_a_map_word_occurence_from_listofwords my_list_of_words my_map =
       let rec compute_word_to_occurence my_list_of_words my_map =
 	match my_list_of_words with
 	  [] -> my_map
 	| 
 	  head::tail -> compute_word_to_occurence tail (compute_new_map head my_map)  in
-      compute_word_to_occurence my_list_of_words StringMap.empty;;
+      compute_word_to_occurence my_list_of_words my_map;;
 
 
     (** Read a file d by filename
@@ -57,20 +56,20 @@ module Line =
         - a word is a sequence of letters 
         - a letter is either lower or upper case
      *)  
-
-    let create_a_list_of_words_from_a_text_file filename = 
-      let lines = ref [] in
+    let create_a_map_word_occurence_from_a_text_file filename = 
       let chan = open_in filename in
+      let my_map = ref StringMap.empty in
       try
 	while true; do
-	  lines := (List.append (Str.split (Str.regexp "[^A-Z^a-z]+") (input_line chan))  !lines);
+	  let lines = Str.split (Str.regexp "[^A-Z^a-z]+") (input_line chan) in
+	  my_map := create_a_map_word_occurence_from_listofwords lines !my_map;
 	  flush stdout;
-	done; []
+	done; !my_map
       with End_of_file ->
 	print_string "**************************************************End of file\n";
 	flush stdout;
 	close_in chan;
-	List.rev !lines ;;
+	!my_map;;
       
     (** This function is not used  *)
     let rec print_my_list myStringMap myString =
@@ -142,14 +141,9 @@ module Line =
       let occurence_to_word = ref IntMap.empty in
       let help_map my_word my_occurence = (occurence_to_word := (helper_add_apair_occurence_word_to_the_map_occurenceToWord my_word my_occurence !occurence_to_word)) in
       StringMap.iter help_map word_to_occurence;!occurence_to_word;;
-      
+
     (** Create the list of words and then create the map that will mach each word with its occurence*)
-    let my_list_of_words = create_a_list_of_words_from_a_text_file "toto.txt" in
-	print_string "Length of the list of words:";
-	print_int (List.length(my_list_of_words));
-	print_string "\n";
-	print_my_list_of_words my_list_of_words;
-	let myMapWordToOccurence = (create_a_map_word_occurence_from_listofwords my_list_of_words) in
+    let myMapWordToOccurence = create_a_map_word_occurence_from_a_text_file "toto.txt" in
         let myMapOccurenceToWord = (create_map_occurence_to_word myMapWordToOccurence) in
 	(print_word_to_occurence myMapWordToOccurence);
 	(print_occurence_to_word myMapOccurenceToWord);
@@ -163,7 +157,6 @@ module Line =
 	(let value = (StringMap.find my_key my_map) in 
 	 StringMap.add my_key (value+1) my_map)
       else (StringMap.add my_key 1 my_map);;
-	
-
+       
 	
   end;;
