@@ -23,22 +23,22 @@ module Line =
       let find_max my_key my_value =
 	max_values :=  SetOfInt.add my_value !max_values in
       StringMap.iter find_max my_map;
-      !max_values;;
-      
+      !max_values;;      
       
     (** Helper function: If the word does not belong to the map's domain then
     add an association (word, 1) to the map
     else add 1 to the counter associated with the existing word.*)        
     let compute_new_map my_key my_map = 
-      if (StringMap.mem my_key my_map) then 
-	(let value = (StringMap.find my_key my_map) in 
+      try
+      (let value = (StringMap.find my_key my_map) in 
 	 StringMap.add my_key (value+1) my_map)
-      else (StringMap.add my_key 1 my_map);;
+      with Not_found ->
+	(StringMap.add my_key 1 my_map);;
       
     (** Create a map from a list of words
-   - each words that belong to the list will be part of the domain of the map
-   - the number of occurence the word in the list will be part of the range of the map.
-   - the map will have a word and its number of occurence
+   - Each word that belongs to the list will be part of the domain of the map
+   - The number of occurence the word in the list will be part of the range of the map.
+   - The map will have a word and its number of occurence
      *)
     let create_a_map_word_occurence_from_listofwords my_list_of_words my_map =
       let rec compute_word_to_occurence my_list_of_words my_map =
@@ -52,7 +52,7 @@ module Line =
     (** Read a file d by filename
         - create a map words -> occurence
         - create a map occurence -> words
-        - each word belongs to excatly one line 
+        - each word belongs to one or severa lines
         - there is duplicated word in the list
         - a word is a sequence of letters 
         - a letter is either lower or upper case
@@ -60,26 +60,15 @@ module Line =
     let create_a_map_word_occurence_from_a_text_file filename = 
       let chan = open_in filename in
       let my_map = ref StringMap.empty in
+      let my_regexp = (Str.regexp "[^A-Z^a-z]+") in
       try
 	while true; do
-	  let lines = Str.split (Str.regexp "[^A-Z^a-z]+") (input_line chan) in
-	  my_map := create_a_map_word_occurence_from_listofwords lines !my_map;
-	  flush stdout;
+	  let list_of_words = Str.split my_regexp (input_line chan) in
+	  my_map := create_a_map_word_occurence_from_listofwords list_of_words !my_map;
 	done; !my_map
       with End_of_file ->
-	print_string "**************************************************End of file\n";
-	flush stdout;
 	close_in chan;
-	!my_map;;
-      
-    (** This function is not used  *)
-    let rec print_my_list myStringMap myString =
-      match 
-	myString 
-      with
-	[] -> print_string "The list is empty"; myStringMap
-      |
-	head::tail -> print_string head; print_string "...\n"; print_my_list (StringMap.add "titi" "toto" myStringMap) tail;;
+	!my_map;;      
       
     (** Print a list of words to the console  *)
     let print_my_list_of_words my_list = 
@@ -118,7 +107,7 @@ module Line =
     let print_occurence_to_word my_map =
       print_string "Occurence to word:";
       let print_key_value my_key my_value =
-	print_string "association occurence->word:";
+	print_string "association occurence->words:";
 	print_int my_key;print_string "->";
 	print_my_list_of_words my_value;
 	print_string "\n";
@@ -132,15 +121,18 @@ module Line =
 	print_int my_int; print_string "," in
       SetOfInt.iter print_myint my_set;;
 
+    (** Create an association of the map word->occurence *)
     let helper_add_apair_occurence_word_to_the_map_occurenceToWord my_word my_occurence my_map =
       if (IntMap.mem my_occurence my_map) then 
 	(let list_of_words = (IntMap.find my_occurence my_map) in 
 	 IntMap.add my_occurence (my_word::list_of_words) my_map)
       else (IntMap.add my_occurence (my_word::[])  my_map);;
 
+    (** Create a map occurence->word using the map word->occurence *)
     let create_map_occurence_to_word word_to_occurence = 
       let occurence_to_word = ref IntMap.empty in
-      let help_map my_word my_occurence = (occurence_to_word := (helper_add_apair_occurence_word_to_the_map_occurenceToWord my_word my_occurence !occurence_to_word)) in
+      let help_map my_word my_occurence = 
+	(occurence_to_word := (helper_add_apair_occurence_word_to_the_map_occurenceToWord my_word my_occurence !occurence_to_word)) in
       StringMap.iter help_map word_to_occurence;!occurence_to_word;;
 
     (** Create the list of words and then create the map that will mach each word with its occurence*)
@@ -163,10 +155,11 @@ module Line =
     add an association (word, 1) to the map
     else add 1 to the counter associated with the existing word.*)        
     let compute_new_map_occurence my_key my_map = 
-      if (StringMap.mem my_key my_map) then 
-	(let value = (StringMap.find my_key my_map) in 
+      try
+      	(let value = (StringMap.find my_key my_map) in 
 	 StringMap.add my_key (value+1) my_map)
-      else (StringMap.add my_key 1 my_map);;
+      with Not_found ->
+	StringMap.add my_key 1 my_map;;
        
 	
   end;;
