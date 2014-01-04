@@ -1,13 +1,12 @@
-
-(* #load "str.cma";; *)
+(** Read a file by a filename
+        - create a map words -> occurence
+        - create a map occurence -> words
+        - each word belongs to one or severa lines
+        - there is duplicated word in the list
+        - a word is a sequence of letters 
+        - a letter is either lower or upper case
+ *)  
  
-(** The module is to:
-  - create a list of words from a text file
-  - create a map that expresses the occurence of each word
-  - a word is a sequence of letters 
-  - print a list of occurence of each word
- *)
-
 module Line =
   struct
     
@@ -110,8 +109,7 @@ module Line =
 
     (** Create the list of words and then create the map that will mach each word with its occurence*)
     let myMapWordToOccurence = create_a_map_word_occurence_from_a_text_file "toto.txt" in
-
-        let myMapOccurenceToWord = create_map_occurence_to_word myMapWordToOccurence in
+	let myMapOccurenceToWord = create_map_occurence_to_word myMapWordToOccurence in
 	let number_of_words = ref 0 in
 	let count_words word occurence = number_of_words := !number_of_words + occurence.balance in
 	(Hashtbl.iter count_words myMapWordToOccurence);
@@ -122,9 +120,5 @@ module Line =
 	(print_string "\n");
 	(print_word_to_occurence myMapWordToOccurence);
 	(print_occurence_to_word myMapOccurenceToWord);;
-(*
-        myMapWordToOccurence;;
- *)
 
-
-  end;;
+ end;;
