@@ -59,12 +59,9 @@ module Line =
 	(try 
 	    let value = (Hashtbl.find !the_map my_key) in 
 	    value.balance <- value.balance+1;
-	    (*Hashtbl.add !the_map my_key value;*)
-	    ();
 	  with Not_found ->
 	    let value = { balance = 1  } in 
 	    Hashtbl.add !the_map my_key value;
-	    ();
 	) in
       try
 	while true; do
@@ -116,10 +113,10 @@ module Line =
 
         let myMapOccurenceToWord = create_map_occurence_to_word myMapWordToOccurence in
 	let number_of_words = ref 0 in
-	let count_words word occurence = number_of_words := !number_of_words + occurence in
+	let count_words word occurence = number_of_words := !number_of_words + occurence.balance in
+	(Hashtbl.iter count_words myMapWordToOccurence);
 	(print_string "Numer of words in the file");
 	(print_int !number_of_words);
-	(*(Hashtbl.iter count_words myMapWordToOccurence); *)
 	(print_string "\n");
 	(print_string "Number of unique words in the file");
 	(print_string "\n");
