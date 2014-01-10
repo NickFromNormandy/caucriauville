@@ -1,0 +1,46 @@
+import java.io.*;
+
+class HelloWorldApp {
+
+    public static void main(String[] args) {
+
+        System.out.println("Hello World!"); // Display the string.
+        ReadAFile();
+
+    }
+
+    public static void ReadAFile()
+    {
+        File file = new File("toto.txt");
+        BufferedReader reader = null;
+        try {
+
+            reader = new BufferedReader(new FileReader(file));
+            String text = null;
+            text = reader.readLine();
+
+            while(text != null)
+            {
+                System.out.println(text);
+            }
+             
+        }
+        catch (FileNotFoundException e)
+        {
+            e.printStackTrace();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (reader != null)
+                {
+                    reader.close();
+                }
+            } 
+            catch(IOException e) {
+            }
+        }
+    }
+}
