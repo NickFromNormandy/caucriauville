@@ -1,0 +1,18 @@
+class Counter 
+{
+private:
+    int value;
+publicc:
+    Counter(int c)
+    {
+        value = c;
+    }
+
+    int getAndIncrement() 
+    {
+        int temp = value;
+        value = temp + 1;
+        return temp;
+    }
+}
+        
