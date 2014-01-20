@@ -4,9 +4,12 @@
 #include <stdlib.h>
 #include <vector>
 #include <fstream>
-#include <hash_map>
+//#include <hash_map>
+//#include <google/sparse_hash_map>
+#include <unordered_map>
 
-
+//using namespace std;
+//using google::sparse_hash_map;
 
 class Lock {
 
@@ -17,6 +20,7 @@ public:
     virtual void unlock(void) = 0 ;
 
     virtual ~Lock(void) {};
+
 };
 
 class LockWithMutex : public Lock {
@@ -42,20 +46,17 @@ void tokenize(const std::string& str, std::vector<std::string>& tokens)
 {
     std::string::const_iterator myIterator = str.begin();
     std::string::const_iterator begin_pos = myIterator;
-    std::cout << "The String" << str << "\n";
+    
 
     while(begin_pos!=str.end())
     {
-
-        std::cout << "The String" << str << "\n";
+        
         while( myIterator!=str.end())
         {
-            std::cout << "value:" << *myIterator << ":\n";
 
             if  ((((*myIterator) >= 'A' && (*myIterator) <= 'Z')) || ((*myIterator) >= 'a' && (*myIterator) <= 'z'))
             {
-                myIterator++;
-               
+                myIterator++;               
             }
             else
             {
@@ -64,12 +65,12 @@ void tokenize(const std::string& str, std::vector<std::string>& tokens)
             }
         }
 
-        std::cout << "Adding something to the token's list\n";
-        tokens.push_back(std::string(begin_pos, myIterator));
+        //std::string *pString = new std::string(begin_pos, myIterator);
+        tokens.push_back(str);
 
         if (myIterator == str.end())
         {
-            std::cout << "we get out here\n";
+        
             break;
         }
 
@@ -79,6 +80,7 @@ void tokenize(const std::string& str, std::vector<std::string>& tokens)
 
 class Counter 
 {
+
 public:
 
     Counter(int c)
@@ -134,6 +136,7 @@ private:
     Counter     *m_Counter;
     pthread_t    m_thread;
     unsigned int m_thread_number;
+
 };
 
 
@@ -146,6 +149,15 @@ void *NickThread::execute(void *myInput)
 };
 
 
+struct eqstr
+{
+    bool operator()(const std::string s1, const std::string s2) const
+    {
+        return (s1 == s2);
+    }
+
+};
+
 class FileParser
 {
 
@@ -155,8 +167,25 @@ public:
    
     void ReadAndParseTheFile(void);
 
+    void PrintMapWordToOccurence(void);
 
+private:
+
+    std::unordered_map <std::string, int>  MapWordToOccurence;
+    std::unordered_map <std::string, int>::const_iterator myMapIter;
 };
+
+void FileParser::PrintMapWordToOccurence(void)
+{
+    std::cout << "Print Map: Word To Occurence\n";
+    std::unordered_map <std::string, int>::const_iterator myIter = MapWordToOccurence.begin();
+    for(;myIter != MapWordToOccurence.end(); myIter++)
+    {
+        
+        std::cout << "value:" << myIter->first << ":" << myIter->second << ":\n";
+    }
+    std::cout << "Print has been printed\n";
+}
 
 void FileParser::ReadAndParseTheFile(void)
 {
@@ -175,12 +204,24 @@ void FileParser::ReadAndParseTheFile(void)
     {
         std::vector<std::string> myVectorOfTokens;
         tokenize(myString, myVectorOfTokens);
+     
         for(std::vector<std::string>::iterator it =  myVectorOfTokens.begin();it!= myVectorOfTokens.end();++it)
         {
-            std::cout << "Token" << *it << std::endl;
+            MapWordToOccurence.find(*it);
+           
+            if (myMapIter == MapWordToOccurence.end())
+            {
+                MapWordToOccurence[*it] = 1;
+            }
+            else
+            {
+                MapWordToOccurence[*it]+=1;
+            }
         }
-        std::cout << myString << std::endl;
     }
+
+    PrintMapWordToOccurence();
+    exit(-1);
 
     const int threadCounter = 10;
     unsigned int *pIndexThread;
