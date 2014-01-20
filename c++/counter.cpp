@@ -11,6 +11,10 @@
 //using namespace std;
 //using google::sparse_hash_map;
 
+
+
+
+
 class Lock {
 
 public:
@@ -42,41 +46,6 @@ private:
 };
 
 
-void tokenize(const std::string& str, std::vector<std::string>& tokens)
-{
-    std::string::const_iterator myIterator = str.begin();
-    std::string::const_iterator begin_pos = myIterator;
-    
-
-    while(begin_pos!=str.end())
-    {
-        
-        while( myIterator!=str.end())
-        {
-
-            if  ((((*myIterator) >= 'A' && (*myIterator) <= 'Z')) || ((*myIterator) >= 'a' && (*myIterator) <= 'z'))
-            {
-                myIterator++;               
-            }
-            else
-            {
-                myIterator++;
-                break;
-            }
-        }
-
-        //std::string *pString = new std::string(begin_pos, myIterator);
-        tokens.push_back(str);
-
-        if (myIterator == str.end())
-        {
-        
-            break;
-        }
-
-        begin_pos = myIterator;
-    }
-};
 
 class Counter 
 {
@@ -158,6 +127,8 @@ struct eqstr
 
 };
 
+typedef  std::unordered_map <std::string, int> mymap; 
+
 class FileParser
 {
 
@@ -166,26 +137,62 @@ public:
     FileParser() {}
    
     void ReadAndParseTheFile(void);
-
     void PrintMapWordToOccurence(void);
+    void tokenize(const std::string& str, std::vector<std::string>& tokens);
 
 private:
 
-    std::unordered_map <std::string, int>  MapWordToOccurence;
-    std::unordered_map <std::string, int>::const_iterator myMapIter;
+    mymap  MapWordToOccurence;
+    mymap::const_iterator myMapIter;
 };
 
 void FileParser::PrintMapWordToOccurence(void)
 {
     std::cout << "Print Map: Word To Occurence\n";
-    std::unordered_map <std::string, int>::const_iterator myIter = MapWordToOccurence.begin();
+    mymap::const_iterator myIter = MapWordToOccurence.begin();
+
     for(;myIter != MapWordToOccurence.end(); myIter++)
-    {
-        
+    {    
         std::cout << "value:" << myIter->first << ":" << myIter->second << ":\n";
     }
     std::cout << "Print has been printed\n";
 }
+
+
+void FileParser::tokenize(const std::string& str, std::vector<std::string>& tokens)
+{
+    std::string::const_iterator myIterator = str.begin();
+    std::string::const_iterator begin_pos = myIterator;
+    
+
+    while(begin_pos!=str.end())
+    {
+        
+        while( myIterator!=str.end())
+        {
+            std::string::value_type c=*myIterator;
+            if  ((c >= 'A' && c <= 'Z') || (c >= 'a' & c <= 'z'))
+            {
+                tokens.push_back(std::string(begin_pos, myIterator));
+                myIterator++;               
+            }
+            else
+            {
+                
+                myIterator++;
+                break;
+            }
+        }
+       
+        if (myIterator == str.end())
+        {
+        
+            break;
+        }
+
+        begin_pos = myIterator;
+    }
+};
 
 void FileParser::ReadAndParseTheFile(void)
 {
