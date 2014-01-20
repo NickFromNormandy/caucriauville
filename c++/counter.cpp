@@ -37,27 +37,42 @@ private:
 };
 
 
-void tokenize(const std::string& str, std::vector<std::string> tokens,
-              const std::string& delimiters = " ", bool trimEmpty = false)
+void tokenize(const std::string& str, std::vector<std::string>& tokens)
 {
-
     std::string::const_iterator myIterator = str.begin();
     std::string::const_iterator begin_pos = myIterator;
+    cout << "The String" << str << "\n";
 
     while(begin_pos!=str.end())
     {
-                      
-        while(myIterator!=str.end() && (*myIterator >= 'A' || *myIterator <= 'Z' || *myIterator >= 'a' || *myIterator <= 'z'))
+
+        cout << "The String" << str << "\n";
+        while( myIterator!=str.end())
         {
-            myIterator++;
+            cout << "value:" << *myIterator << ":\n";
+
+            if  ((((*myIterator) >= 'A' && (*myIterator) <= 'Z')) || ((*myIterator) >= 'a' && (*myIterator) <= 'z'))
+            {
+                myIterator++;
+               
+            }
+            else
+            {
+                myIterator++;
+                break;
+            }
         }
-        
+
+        cout << "Adding something to the token's list\n";
+        tokens.push_back(string(begin_pos, myIterator));
+
         if (myIterator == str.end())
         {
+            cout << "we get out here\n";
             break;
         }
+
         begin_pos = myIterator;
-        tokens.push_back("toto");
     }
 };
 
@@ -130,10 +145,22 @@ void *NickThread::execute(void *myInput)
 };
 
 
-int main()
+class FileParser
+{
+
+public:
+
+    FileParser() {}
+   
+    void ReadAndParseTheFile(void);
+
+
+};
+
+void FileParser::ReadAndParseTheFile(void)
 {
     Counter myCounter(0);
-    std::ifstream myFile;
+    std::ifstream myFile;    
 
     myFile.open("toto.txt");
 
@@ -142,13 +169,19 @@ int main()
         cerr << "The file toto.txt does not exist\n";
         exit(-1);
     }
-
+  
     for(std::string myString;std::getline(myFile, myString); )
     {
+        std::vector<std::string> myVectorOfTokens;
+        tokenize(myString, myVectorOfTokens);
+        for(std::vector<std::string>::iterator it =  myVectorOfTokens.begin();it!= myVectorOfTokens.end();++it)
+        {
+            cout << "Token" << *it << std::endl;
+        }
         std::cout << myString << std::endl;
     }
 
-    const int threadCounter = 10000;
+    const int threadCounter = 10;
     unsigned int *pIndexThread;
     NickThread myThread[threadCounter];   
 
@@ -166,5 +199,13 @@ int main()
     }
     cout << "This is done\n";
 
+    
+}
+
+int main()
+{
+    FileParser myFileParser;
+
+    myFileParser.ReadAndParseTheFile();
     return 0;
 }
