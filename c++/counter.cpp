@@ -4,8 +4,9 @@
 #include <stdlib.h>
 #include <vector>
 #include <fstream>
+#include <hash_map>
 
-using namespace std;
+
 
 class Lock {
 
@@ -41,15 +42,15 @@ void tokenize(const std::string& str, std::vector<std::string>& tokens)
 {
     std::string::const_iterator myIterator = str.begin();
     std::string::const_iterator begin_pos = myIterator;
-    cout << "The String" << str << "\n";
+    std::cout << "The String" << str << "\n";
 
     while(begin_pos!=str.end())
     {
 
-        cout << "The String" << str << "\n";
+        std::cout << "The String" << str << "\n";
         while( myIterator!=str.end())
         {
-            cout << "value:" << *myIterator << ":\n";
+            std::cout << "value:" << *myIterator << ":\n";
 
             if  ((((*myIterator) >= 'A' && (*myIterator) <= 'Z')) || ((*myIterator) >= 'a' && (*myIterator) <= 'z'))
             {
@@ -63,12 +64,12 @@ void tokenize(const std::string& str, std::vector<std::string>& tokens)
             }
         }
 
-        cout << "Adding something to the token's list\n";
-        tokens.push_back(string(begin_pos, myIterator));
+        std::cout << "Adding something to the token's list\n";
+        tokens.push_back(std::string(begin_pos, myIterator));
 
         if (myIterator == str.end())
         {
-            cout << "we get out here\n";
+            std::cout << "we get out here\n";
             break;
         }
 
@@ -97,7 +98,7 @@ public:
 
     void Print(void)
     {
-        cout << "Counter:" << m_value << "\n";
+        std::cout << "Counter:" << m_value << "\n";
     }
 
 private:
@@ -166,7 +167,7 @@ void FileParser::ReadAndParseTheFile(void)
 
     if (myFile.is_open() == false)
     {
-        cerr << "The file toto.txt does not exist\n";
+        std::cerr << "The file toto.txt does not exist\n";
         exit(-1);
     }
   
@@ -176,7 +177,7 @@ void FileParser::ReadAndParseTheFile(void)
         tokenize(myString, myVectorOfTokens);
         for(std::vector<std::string>::iterator it =  myVectorOfTokens.begin();it!= myVectorOfTokens.end();++it)
         {
-            cout << "Token" << *it << std::endl;
+            std::cout << "Token" << *it << std::endl;
         }
         std::cout << myString << std::endl;
     }
@@ -195,9 +196,10 @@ void FileParser::ReadAndParseTheFile(void)
     {
         pthread_t mythread;
         pthread_join(myThread[i].GetID(), (void **) &pIndexThread);
-        cout << "pThread Index: " << *pIndexThread << "\n";
+        std::cout << "pThread Index: " << *pIndexThread << "\n";
     }
-    cout << "This is done\n";
+
+    std::cout << "This is done\n";
 
     
 }
