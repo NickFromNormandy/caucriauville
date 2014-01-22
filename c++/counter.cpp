@@ -126,42 +126,62 @@ struct eqstr
 
 };
 
-typedef  std::vector<std::string> myArray_t;
-typedef  std::unordered_map <std::string, int> mymap; 
-typedef  std::unordered_map <int, myArray_t> myMapOccurenceToWord_t;
-
 class FileParser
 {
-
+    typedef  std::vector<std::string> myArray_t;
+    typedef  std::unordered_map <std::string, int> mymap; 
+    typedef  std::unordered_map <int, myArray_t> myMapOccurenceToWord_t;
 public:
-
-    FileParser() {}
-   
+    
+    FileParser() {}   
     void ReadAndParseTheFile(void);
     void PrintMapWordToOccurence(void);
     void PrintMapOccurenceToWords(void);
     void tokenize(const std::string& str, myArray_t& tokens);
     void CreateOccurenceToWord(void);
+    void CreateThreads(void);
 
 private:
-
+    static const int threadCounter =10;
     mymap  MapWordToOccurence;
     mymap::const_iterator myMapIter;
     myMapOccurenceToWord_t MapOccurenceToWord;
+    NickThread myThread[threadCounter];   
 
 };
 
+//const int FileParser::threadCounter = 10;
+
+void FileParser::CreateThreads(void)
+{
+    
+    unsigned int *pIndexThread;
+    Counter myCounter(0);
+
+    for(int i =0;i<threadCounter;i++)
+    {
+        myThread[i].SetCounter(&myCounter);
+        myThread[i].Start(i);
+    }
+
+    for(int i =0;i<threadCounter;i++)
+    {
+        pthread_t mythread;
+        pthread_join(myThread[i].GetID(), (void **) &pIndexThread);
+        std::cout << "pThread Index: " << *pIndexThread << "\n";
+    }
+
+    std::cout << "This is done\n";
+
+}
+
 void FileParser::CreateOccurenceToWord(void)
 {
-    for(mymap::const_iterator myIter = MapWordToOccurence.begin();
-        myIter != MapWordToOccurence.end(); myIter++)
+    for(mymap::const_iterator myIter = MapWordToOccurence.begin(); myIter != MapWordToOccurence.end(); myIter++)
     {    
         std::cout << "value:" << myIter->first << ":" << myIter->second << ":\n";
         myMapOccurenceToWord_t::const_iterator myOccurenceIter = MapOccurenceToWord.find(myIter->second);
-        
-       
         MapOccurenceToWord[myIter->second].push_back(myIter->first);
-        
     }
 }
 
@@ -204,29 +224,29 @@ void FileParser::tokenize(const std::string& str, myArray_t& tokens)
         if  ((c >= 'A' && c <= 'Z') || (c >= 'a' & c <= 'z'))
         {
             if (inAword == false) {begin_pos = myIterator;inAword = true;}
-            myIterator++;               
         }
         else
         {                 
             if (inAword && ( myIterator-begin_pos)>0)
             {                
                 tokens.push_back(std::string(begin_pos, myIterator));
-                myIterator++;
-                break;
+                inAword = false;
             }
-            else
-            {
-                myIterator++;
-            }
-            inAword = false;
         }       
+        myIterator++;
+    }
+
+    if (inAword && ( myIterator-begin_pos)>0)
+    {                
+        tokens.push_back(std::string(begin_pos, myIterator));
+        inAword = false;
     }
 };
 
 
 void FileParser::ReadAndParseTheFile(void)
 {
-    Counter myCounter(0);
+
     std::ifstream myFile;    
 
     myFile.open("toto.txt");
@@ -262,24 +282,6 @@ void FileParser::ReadAndParseTheFile(void)
     PrintMapOccurenceToWords();
     exit(-1);
 
-    const int threadCounter = 10;
-    unsigned int *pIndexThread;
-    NickThread myThread[threadCounter];   
-
-    for(int i =0;i<threadCounter;i++)
-    {
-        myThread[i].SetCounter(&myCounter);
-        myThread[i].Start(i);
-    }
-
-    for(int i =0;i<threadCounter;i++)
-    {
-        pthread_t mythread;
-        pthread_join(myThread[i].GetID(), (void **) &pIndexThread);
-        std::cout << "pThread Index: " << *pIndexThread << "\n";
-    }
-
-    std::cout << "This is done\n";
 
     
 }
