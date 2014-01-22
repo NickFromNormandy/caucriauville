@@ -4,14 +4,13 @@
 #include <stdlib.h>
 #include <vector>
 #include <fstream>
+#include <string.h>
 //#include <hash_map>
 //#include <google/sparse_hash_map>
 #include <unordered_map>
 
 //using namespace std;
 //using google::sparse_hash_map;
-
-
 
 
 
@@ -127,7 +126,9 @@ struct eqstr
 
 };
 
+typedef  std::vector<std::string> myArray_t;
 typedef  std::unordered_map <std::string, int> mymap; 
+typedef  std::unordered_map <int, myArray_t> myMapOccurenceToWord_t;
 
 class FileParser
 {
@@ -138,61 +139,90 @@ public:
    
     void ReadAndParseTheFile(void);
     void PrintMapWordToOccurence(void);
-    void tokenize(const std::string& str, std::vector<std::string>& tokens);
+    void PrintMapOccurenceToWords(void);
+    void tokenize(const std::string& str, myArray_t& tokens);
+    void CreateOccurenceToWord(void);
 
 private:
 
     mymap  MapWordToOccurence;
     mymap::const_iterator myMapIter;
+    myMapOccurenceToWord_t MapOccurenceToWord;
+
 };
+
+void FileParser::CreateOccurenceToWord(void)
+{
+    for(mymap::const_iterator myIter = MapWordToOccurence.begin();
+        myIter != MapWordToOccurence.end(); myIter++)
+    {    
+        std::cout << "value:" << myIter->first << ":" << myIter->second << ":\n";
+        myMapOccurenceToWord_t::const_iterator myOccurenceIter = MapOccurenceToWord.find(myIter->second);
+        
+       
+        MapOccurenceToWord[myIter->second].push_back(myIter->first);
+        
+    }
+}
 
 void FileParser::PrintMapWordToOccurence(void)
 {
-    std::cout << "Print Map: Word To Occurence\n";
-    mymap::const_iterator myIter = MapWordToOccurence.begin();
-
-    for(;myIter != MapWordToOccurence.end(); myIter++)
+    std::cout << "Print Map: Word To Occurence---------------------------------------------------------\n";
+    
+    for(mymap::const_iterator myIter = MapWordToOccurence.begin();myIter != MapWordToOccurence.end(); myIter++)
     {    
         std::cout << "value:" << myIter->first << ":" << myIter->second << ":\n";
+     
     }
-    std::cout << "Print has been printed\n";
+    std::cout << "Map Word To Occurence has been printed----------------------------------------------\n";
 }
 
+void FileParser::PrintMapOccurenceToWords(void)
+{
+    for(myMapOccurenceToWord_t::const_iterator myIter = MapOccurenceToWord.begin();myIter != MapOccurenceToWord.end(); myIter++)
+    {
+        std::cout << myIter->first << "->";
+        
+        for(std::vector<std::string>::const_iterator it =  myIter->second.begin();it!= myIter->second.end();++it)
+        {
+            std::cout << *it << ",";
+        }
+        std::cout << "\n";
+    }
+}
 
-void FileParser::tokenize(const std::string& str, std::vector<std::string>& tokens)
+void FileParser::tokenize(const std::string& str, myArray_t& tokens)
 {
     std::string::const_iterator myIterator = str.begin();
     std::string::const_iterator begin_pos = myIterator;
-    
+    bool inAword = false;
 
-    while(begin_pos!=str.end())
+    while( myIterator!=str.end())
     {
-        
-        while( myIterator!=str.end())
+        std::string::value_type c=*myIterator;
+
+        if  ((c >= 'A' && c <= 'Z') || (c >= 'a' & c <= 'z'))
         {
-            std::string::value_type c=*myIterator;
-            if  ((c >= 'A' && c <= 'Z') || (c >= 'a' & c <= 'z'))
-            {
+            if (inAword == false) {begin_pos = myIterator;inAword = true;}
+            myIterator++;               
+        }
+        else
+        {                 
+            if (inAword && ( myIterator-begin_pos)>0)
+            {                
                 tokens.push_back(std::string(begin_pos, myIterator));
-                myIterator++;               
-            }
-            else
-            {
-                
                 myIterator++;
                 break;
             }
-        }
-       
-        if (myIterator == str.end())
-        {
-        
-            break;
-        }
-
-        begin_pos = myIterator;
+            else
+            {
+                myIterator++;
+            }
+            inAword = false;
+        }       
     }
 };
+
 
 void FileParser::ReadAndParseTheFile(void)
 {
@@ -209,7 +239,7 @@ void FileParser::ReadAndParseTheFile(void)
   
     for(std::string myString;std::getline(myFile, myString); )
     {
-        std::vector<std::string> myVectorOfTokens;
+        myArray_t myVectorOfTokens;
         tokenize(myString, myVectorOfTokens);
      
         for(std::vector<std::string>::iterator it =  myVectorOfTokens.begin();it!= myVectorOfTokens.end();++it)
@@ -227,7 +257,9 @@ void FileParser::ReadAndParseTheFile(void)
         }
     }
 
+    CreateOccurenceToWord();
     PrintMapWordToOccurence();
+    PrintMapOccurenceToWords();
     exit(-1);
 
     const int threadCounter = 10;
