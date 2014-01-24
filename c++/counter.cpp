@@ -123,14 +123,14 @@ struct eqstr
     {
         return (s1 == s2);
     }
-
 };
 
-class FileParser
+class FileParser : public NickThread
 {
     typedef  std::vector<std::string> myArray_t;
     typedef  std::unordered_map <std::string, int> mymap; 
     typedef  std::unordered_map <int, myArray_t> myMapOccurenceToWord_t;
+
 public:
     
     FileParser() {}   
@@ -142,6 +142,7 @@ public:
     void CreateThreads(void);
 
 private:
+
     static const int threadCounter =10;
     mymap  MapWordToOccurence;
     mymap::const_iterator myMapIter;
@@ -281,15 +282,45 @@ void FileParser::ReadAndParseTheFile(void)
     PrintMapWordToOccurence();
     PrintMapOccurenceToWords();
     exit(-1);
-
-
     
 }
 
+class Manager {
+public:
+
+    Manager(std::string myFileName) : m_fileName(myFileName) {};
+    void GetTaskDefinition(void);
+    void MakeDecision(void);
+    void Execute(void) {FileParser myFileParser; myFileParser.ReadAndParseTheFile();}
+
+private:
+
+    std::string m_fileName;
+    size_t m_sizeOfTheFile;
+    unsigned int m_threadValue;
+    unsigned int m_tasks;
+};
+
+void Manager::GetTaskDefinition(void)
+{
+    std::streampos begin,end;
+    std::ifstream myfile (m_fileName);
+    begin = myfile.tellg();
+    myfile.seekg (0, std::ios::end);
+    end = myfile.tellg();
+    myfile.close();
+    size_t m_sizeOfTheFile = end-begin;
+    m_threadValue = 16;
+    m_tasks = m_sizeOfTheFile/m_threadValue;
+    std::cout << m_fileName << ":" << m_sizeOfTheFile << "\n";
+}
+
+
 int main()
 {
-    FileParser myFileParser;
-
-    myFileParser.ReadAndParseTheFile();
+    
+    Manager myManager("toto.txt");
+    myManager.GetTaskDefinition();
+    
     return 0;
 }
