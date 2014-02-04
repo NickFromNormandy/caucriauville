@@ -37,6 +37,22 @@ module Line =
 			print_it tail 
       in
       print_it my_list;;
+    
+    let rec list_all_permutations my_list = 
+      match
+	my_list
+      with
+	[] -> []
+      |
+	head::tail -> head::(list_all_permutations tail)
+
+    let rec iter_permutation my_list tmp = 
+      match
+	my_list
+      with
+	[] -> tmp
+      |
+	head::tail -> list_all_permutations tail
       
     (** Helper function: If the word does not belong to the map's domain then
     add an association (word, 1) to the map

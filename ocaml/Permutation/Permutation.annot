@@ -43,7 +43,7 @@ type(
   string list -> unit
 )
 ident(
-  def print_my_list_of_words "Permutation.ml" 53 1647 1651 "Permutation.ml" 124 4563 4567
+  def print_my_list_of_words "Permutation.ml" 41 1125 1129 "Permutation.ml" 140 4853 4857
 )
 "Permutation.ml" 19 648 679 "Permutation.ml" 19 648 686
 type(
@@ -432,1608 +432,1777 @@ type(
 type(
   unit
 )
-"Permutation.ml" 53 1647 1655 "Permutation.ml" 53 1647 1699
+"Permutation.ml" 41 1125 1137 "Permutation.ml" 41 1125 1158
+type(
+  'c list list -> 'c list list
+)
+ident(
+  def list_all_permutations "Permutation.ml" 41 1125 1129 "Permutation.ml" 140 4853 4857
+)
+"Permutation.ml" 41 1125 1159 "Permutation.ml" 41 1125 1166
+type(
+  'c list list
+)
+ident(
+  def my_list "Permutation.ml" 42 1170 1176 "Permutation.ml" 47 1222 1271
+)
+"Permutation.ml" 43 1182 1183 "Permutation.ml" 43 1182 1190
+type(
+  'c list list
+)
+ident(
+  int_ref my_list "Permutation.ml" 41 1125 1159 "Permutation.ml" 41 1125 1166
+)
+"Permutation.ml" 45 1202 1203 "Permutation.ml" 45 1202 1205
+type(
+  'c list list
+)
+"Permutation.ml" 45 1202 1210 "Permutation.ml" 45 1202 1212
+type(
+  'c list
+)
+"Permutation.ml" 45 1202 1209 "Permutation.ml" 45 1202 1213
+type(
+  'c list list
+)
+"Permutation.ml" 47 1222 1223 "Permutation.ml" 47 1222 1227
+type(
+  'c list
+)
+ident(
+  def head "Permutation.ml" 47 1222 1237 "Permutation.ml" 47 1222 1271
+)
+"Permutation.ml" 47 1222 1229 "Permutation.ml" 47 1222 1233
+type(
+  'c list list
+)
+ident(
+  def tail "Permutation.ml" 47 1222 1237 "Permutation.ml" 47 1222 1271
+)
+"Permutation.ml" 47 1222 1223 "Permutation.ml" 47 1222 1233
+type(
+  'c list list
+)
+"Permutation.ml" 47 1222 1237 "Permutation.ml" 47 1222 1241
+type(
+  'c list
+)
+ident(
+  int_ref head "Permutation.ml" 47 1222 1223 "Permutation.ml" 47 1222 1227
+)
+"Permutation.ml" 47 1222 1244 "Permutation.ml" 47 1222 1265
+type(
+  'c list list -> 'c list list
+)
+ident(
+  int_ref list_all_permutations "Permutation.ml" 41 1125 1137 "Permutation.ml" 41 1125 1158
+)
+"Permutation.ml" 47 1222 1266 "Permutation.ml" 47 1222 1270
+type(
+  'c list list
+)
+ident(
+  int_ref tail "Permutation.ml" 47 1222 1229 "Permutation.ml" 47 1222 1233
+)
+"Permutation.ml" 47 1222 1243 "Permutation.ml" 47 1222 1271
+call(
+  stack
+)
+type(
+  'c list list
+)
+"Permutation.ml" 47 1222 1237 "Permutation.ml" 47 1222 1271
+type(
+  'c list list
+)
+"Permutation.ml" 42 1170 1176 "Permutation.ml" 47 1222 1271
+type(
+  'c list list
+)
+"Permutation.ml" 49 1273 1285 "Permutation.ml" 49 1273 1301
+type(
+  'd list list -> 'd list list -> 'd list list
+)
+ident(
+  def iter_permutation "Permutation.ml" 49 1273 1277 "Permutation.ml" 140 4853 4857
+)
+"Permutation.ml" 49 1273 1302 "Permutation.ml" 49 1273 1309
+type(
+  'd list list
+)
+ident(
+  def my_list "Permutation.ml" 49 1273 1310 "Permutation.ml" 55 1368 1409
+)
+"Permutation.ml" 49 1273 1310 "Permutation.ml" 49 1273 1313
+type(
+  'd list list
+)
+ident(
+  def tmp "Permutation.ml" 50 1317 1323 "Permutation.ml" 55 1368 1409
+)
+"Permutation.ml" 51 1329 1330 "Permutation.ml" 51 1329 1337
+type(
+  'd list list
+)
+ident(
+  int_ref my_list "Permutation.ml" 49 1273 1302 "Permutation.ml" 49 1273 1309
+)
+"Permutation.ml" 53 1349 1350 "Permutation.ml" 53 1349 1352
+type(
+  'd list list
+)
+"Permutation.ml" 53 1349 1356 "Permutation.ml" 53 1349 1359
+type(
+  'd list list
+)
+ident(
+  int_ref tmp "Permutation.ml" 49 1273 1310 "Permutation.ml" 49 1273 1313
+)
+"Permutation.ml" 55 1368 1369 "Permutation.ml" 55 1368 1373
+type(
+  'd list
+)
+ident(
+  def head "Permutation.ml" 55 1368 1383 "Permutation.ml" 55 1368 1409
+)
+"Permutation.ml" 55 1368 1375 "Permutation.ml" 55 1368 1379
+type(
+  'd list list
+)
+ident(
+  def tail "Permutation.ml" 55 1368 1383 "Permutation.ml" 55 1368 1409
+)
+"Permutation.ml" 55 1368 1369 "Permutation.ml" 55 1368 1379
+type(
+  'd list list
+)
+"Permutation.ml" 55 1368 1383 "Permutation.ml" 55 1368 1404
+type(
+  'd list list -> 'd list list
+)
+ident(
+  int_ref list_all_permutations "Permutation.ml" 41 1125 1137 "Permutation.ml" 41 1125 1158
+)
+"Permutation.ml" 55 1368 1405 "Permutation.ml" 55 1368 1409
+type(
+  'd list list
+)
+ident(
+  int_ref tail "Permutation.ml" 55 1368 1375 "Permutation.ml" 55 1368 1379
+)
+"Permutation.ml" 55 1368 1383 "Permutation.ml" 55 1368 1409
+call(
+  tail
+)
+type(
+  'd list list
+)
+"Permutation.ml" 50 1317 1323 "Permutation.ml" 55 1368 1409
+type(
+  'd list list
+)
+"Permutation.ml" 69 1937 1945 "Permutation.ml" 69 1937 1989
 type(
   string -> (string, occurence) Hashtbl.t
 )
 ident(
-  def create_a_map_word_occurence_from_a_text_file "Permutation.ml" 75 2364 2368 "Permutation.ml" 124 4563 4567
+  def create_a_map_word_occurence_from_a_text_file "Permutation.ml" 91 2654 2658 "Permutation.ml" 140 4853 4857
 )
-"Permutation.ml" 53 1647 1700 "Permutation.ml" 53 1647 1708
+"Permutation.ml" 69 1937 1990 "Permutation.ml" 69 1937 1998
 type(
   string
 )
 ident(
-  def filename "Permutation.ml" 54 1712 1718 "Permutation.ml" 72 2285 2294
+  def filename "Permutation.ml" 70 2002 2008 "Permutation.ml" 88 2575 2584
 )
-"Permutation.ml" 54 1712 1722 "Permutation.ml" 54 1712 1726
+"Permutation.ml" 70 2002 2012 "Permutation.ml" 70 2002 2016
 type(
   in_channel
 )
-"Permutation.ml" 54 1712 1729 "Permutation.ml" 54 1712 1736
+"Permutation.ml" 70 2002 2019 "Permutation.ml" 70 2002 2026
 type(
   string -> in_channel
 )
 ident(
   ext_ref Pervasives.open_in
 )
-"Permutation.ml" 54 1712 1737 "Permutation.ml" 54 1712 1745
+"Permutation.ml" 70 2002 2027 "Permutation.ml" 70 2002 2035
 type(
   string
 )
 ident(
-  int_ref filename "Permutation.ml" 53 1647 1700 "Permutation.ml" 53 1647 1708
+  int_ref filename "Permutation.ml" 69 1937 1990 "Permutation.ml" 69 1937 1998
 )
-"Permutation.ml" 54 1712 1729 "Permutation.ml" 54 1712 1745
+"Permutation.ml" 70 2002 2019 "Permutation.ml" 70 2002 2035
 call(
   stack
 )
 type(
   in_channel
 )
-"Permutation.ml" 55 1749 1759 "Permutation.ml" 55 1749 1766
+"Permutation.ml" 71 2039 2049 "Permutation.ml" 71 2039 2056
 type(
   (string, occurence) Hashtbl.t ref
 )
-"Permutation.ml" 55 1749 1769 "Permutation.ml" 55 1749 1772
+"Permutation.ml" 71 2039 2059 "Permutation.ml" 71 2039 2062
 type(
   (string, occurence) Hashtbl.t -> (string, occurence) Hashtbl.t ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"Permutation.ml" 55 1749 1774 "Permutation.ml" 55 1749 1788
+"Permutation.ml" 71 2039 2064 "Permutation.ml" 71 2039 2078
 type(
   int -> (string, occurence) Hashtbl.t
 )
 ident(
   ext_ref Hashtbl.create
 )
-"Permutation.ml" 55 1749 1789 "Permutation.ml" 55 1749 1794
+"Permutation.ml" 71 2039 2079 "Permutation.ml" 71 2039 2084
 type(
   int
 )
-"Permutation.ml" 55 1749 1773 "Permutation.ml" 55 1749 1795
+"Permutation.ml" 71 2039 2063 "Permutation.ml" 71 2039 2085
 call(
   stack
 )
 type(
   (string, occurence) Hashtbl.t
 )
-"Permutation.ml" 55 1749 1769 "Permutation.ml" 55 1749 1795
+"Permutation.ml" 71 2039 2059 "Permutation.ml" 71 2039 2085
 type(
   (string, occurence) Hashtbl.t ref
 )
-"Permutation.ml" 56 1799 1809 "Permutation.ml" 56 1799 1818
+"Permutation.ml" 72 2089 2099 "Permutation.ml" 72 2089 2108
 type(
   Str.regexp
 )
-"Permutation.ml" 56 1799 1822 "Permutation.ml" 56 1799 1832
+"Permutation.ml" 72 2089 2112 "Permutation.ml" 72 2089 2122
 type(
   string -> Str.regexp
 )
 ident(
   ext_ref Str.regexp
 )
-"Permutation.ml" 56 1799 1833 "Permutation.ml" 56 1799 1846
+"Permutation.ml" 72 2089 2123 "Permutation.ml" 72 2089 2136
 type(
   string
 )
-"Permutation.ml" 56 1799 1821 "Permutation.ml" 56 1799 1847
+"Permutation.ml" 72 2089 2111 "Permutation.ml" 72 2089 2137
 call(
   stack
 )
 type(
   Str.regexp
 )
-"Permutation.ml" 57 1851 1861 "Permutation.ml" 57 1851 1876
+"Permutation.ml" 73 2141 2151 "Permutation.ml" 73 2141 2166
 type(
   string -> unit
 )
-"Permutation.ml" 57 1851 1877 "Permutation.ml" 57 1851 1883
+"Permutation.ml" 73 2141 2167 "Permutation.ml" 73 2141 2173
 type(
   string
 )
 ident(
-  def my_key "Permutation.ml" 58 1887 1888 "Permutation.ml" 64 2084 2086
+  def my_key "Permutation.ml" 74 2177 2178 "Permutation.ml" 80 2374 2376
 )
-"Permutation.ml" 59 1894 1903 "Permutation.ml" 59 1894 1908
+"Permutation.ml" 75 2184 2193 "Permutation.ml" 75 2184 2198
 type(
   occurence
 )
 ident(
-  def value "Permutation.ml" 60 1946 1951 "Permutation.ml" 60 1946 1984
+  def value "Permutation.ml" 76 2236 2241 "Permutation.ml" 76 2236 2274
 )
-"Permutation.ml" 59 1894 1912 "Permutation.ml" 59 1894 1924
+"Permutation.ml" 75 2184 2202 "Permutation.ml" 75 2184 2214
 type(
   (string, occurence) Hashtbl.t -> string -> occurence
 )
 ident(
   ext_ref Hashtbl.find
 )
-"Permutation.ml" 59 1894 1925 "Permutation.ml" 59 1894 1926
+"Permutation.ml" 75 2184 2215 "Permutation.ml" 75 2184 2216
 type(
   (string, occurence) Hashtbl.t ref -> (string, occurence) Hashtbl.t
 )
 ident(
   ext_ref Pervasives.( ! )
 )
-"Permutation.ml" 59 1894 1926 "Permutation.ml" 59 1894 1933
+"Permutation.ml" 75 2184 2216 "Permutation.ml" 75 2184 2223
 type(
   (string, occurence) Hashtbl.t ref
 )
 ident(
-  int_ref the_map "Permutation.ml" 55 1749 1759 "Permutation.ml" 55 1749 1766
+  int_ref the_map "Permutation.ml" 71 2039 2049 "Permutation.ml" 71 2039 2056
 )
-"Permutation.ml" 59 1894 1925 "Permutation.ml" 59 1894 1933
+"Permutation.ml" 75 2184 2215 "Permutation.ml" 75 2184 2223
 type(
   (string, occurence) Hashtbl.t
 )
-"Permutation.ml" 59 1894 1934 "Permutation.ml" 59 1894 1940
+"Permutation.ml" 75 2184 2224 "Permutation.ml" 75 2184 2230
 type(
   string
 )
 ident(
-  int_ref my_key "Permutation.ml" 57 1851 1877 "Permutation.ml" 57 1851 1883
+  int_ref my_key "Permutation.ml" 73 2141 2167 "Permutation.ml" 73 2141 2173
 )
-"Permutation.ml" 59 1894 1911 "Permutation.ml" 59 1894 1941
+"Permutation.ml" 75 2184 2201 "Permutation.ml" 75 2184 2231
 call(
   stack
 )
 type(
   occurence
 )
-"Permutation.ml" 60 1946 1951 "Permutation.ml" 60 1946 1956
+"Permutation.ml" 76 2236 2241 "Permutation.ml" 76 2236 2246
 type(
   occurence
 )
 ident(
-  int_ref value "Permutation.ml" 59 1894 1903 "Permutation.ml" 59 1894 1908
+  int_ref value "Permutation.ml" 75 2184 2193 "Permutation.ml" 75 2184 2198
 )
-"Permutation.ml" 60 1946 1968 "Permutation.ml" 60 1946 1973
+"Permutation.ml" 76 2236 2258 "Permutation.ml" 76 2236 2263
 type(
   occurence
 )
 ident(
-  int_ref value "Permutation.ml" 59 1894 1903 "Permutation.ml" 59 1894 1908
+  int_ref value "Permutation.ml" 75 2184 2193 "Permutation.ml" 75 2184 2198
 )
-"Permutation.ml" 60 1946 1968 "Permutation.ml" 60 1946 1981
+"Permutation.ml" 76 2236 2258 "Permutation.ml" 76 2236 2271
 type(
   int
 )
-"Permutation.ml" 60 1946 1981 "Permutation.ml" 60 1946 1982
+"Permutation.ml" 76 2236 2271 "Permutation.ml" 76 2236 2272
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"Permutation.ml" 60 1946 1982 "Permutation.ml" 60 1946 1983
+"Permutation.ml" 76 2236 2272 "Permutation.ml" 76 2236 2273
 type(
   int
 )
-"Permutation.ml" 60 1946 1968 "Permutation.ml" 60 1946 1983
+"Permutation.ml" 76 2236 2258 "Permutation.ml" 76 2236 2273
 type(
   int
 )
-"Permutation.ml" 60 1946 1951 "Permutation.ml" 60 1946 1984
+"Permutation.ml" 76 2236 2241 "Permutation.ml" 76 2236 2274
 type(
   unit
 )
-"Permutation.ml" 59 1894 1899 "Permutation.ml" 60 1946 1984
+"Permutation.ml" 75 2184 2189 "Permutation.ml" 76 2236 2274
 type(
   unit
 )
-"Permutation.ml" 61 1985 1993 "Permutation.ml" 61 1985 2002
+"Permutation.ml" 77 2275 2283 "Permutation.ml" 77 2275 2292
 type(
   exn
 )
-"Permutation.ml" 62 2006 2015 "Permutation.ml" 62 2006 2020
+"Permutation.ml" 78 2296 2305 "Permutation.ml" 78 2296 2310
 type(
   occurence
 )
-"Permutation.ml" 62 2006 2035 "Permutation.ml" 62 2006 2036
+"Permutation.ml" 78 2296 2325 "Permutation.ml" 78 2296 2326
 type(
   int
 )
-"Permutation.ml" 62 2006 2023 "Permutation.ml" 62 2006 2039
+"Permutation.ml" 78 2296 2313 "Permutation.ml" 78 2296 2329
 type(
   occurence
 )
-"Permutation.ml" 63 2044 2049 "Permutation.ml" 63 2044 2060
+"Permutation.ml" 79 2334 2339 "Permutation.ml" 79 2334 2350
 type(
   (string, occurence) Hashtbl.t -> string -> occurence -> unit
 )
 ident(
   ext_ref Hashtbl.add
 )
-"Permutation.ml" 63 2044 2061 "Permutation.ml" 63 2044 2062
+"Permutation.ml" 79 2334 2351 "Permutation.ml" 79 2334 2352
 type(
   (string, occurence) Hashtbl.t ref -> (string, occurence) Hashtbl.t
 )
 ident(
   ext_ref Pervasives.( ! )
 )
-"Permutation.ml" 63 2044 2062 "Permutation.ml" 63 2044 2069
+"Permutation.ml" 79 2334 2352 "Permutation.ml" 79 2334 2359
 type(
   (string, occurence) Hashtbl.t ref
 )
 ident(
-  int_ref the_map "Permutation.ml" 55 1749 1759 "Permutation.ml" 55 1749 1766
+  int_ref the_map "Permutation.ml" 71 2039 2049 "Permutation.ml" 71 2039 2056
 )
-"Permutation.ml" 63 2044 2061 "Permutation.ml" 63 2044 2069
+"Permutation.ml" 79 2334 2351 "Permutation.ml" 79 2334 2359
 type(
   (string, occurence) Hashtbl.t
 )
-"Permutation.ml" 63 2044 2070 "Permutation.ml" 63 2044 2076
+"Permutation.ml" 79 2334 2360 "Permutation.ml" 79 2334 2366
 type(
   string
 )
 ident(
-  int_ref my_key "Permutation.ml" 57 1851 1877 "Permutation.ml" 57 1851 1883
+  int_ref my_key "Permutation.ml" 73 2141 2167 "Permutation.ml" 73 2141 2173
 )
-"Permutation.ml" 63 2044 2077 "Permutation.ml" 63 2044 2082
+"Permutation.ml" 79 2334 2367 "Permutation.ml" 79 2334 2372
 type(
   occurence
 )
 ident(
-  int_ref value "Permutation.ml" 62 2006 2015 "Permutation.ml" 62 2006 2020
+  int_ref value "Permutation.ml" 78 2296 2305 "Permutation.ml" 78 2296 2310
 )
-"Permutation.ml" 63 2044 2049 "Permutation.ml" 63 2044 2083
+"Permutation.ml" 79 2334 2339 "Permutation.ml" 79 2334 2373
 call(
   tail
 )
 type(
   unit
 )
-"Permutation.ml" 62 2006 2011 "Permutation.ml" 63 2044 2083
+"Permutation.ml" 78 2296 2301 "Permutation.ml" 79 2334 2373
 type(
   unit
 )
-"Permutation.ml" 58 1887 1888 "Permutation.ml" 64 2084 2086
+"Permutation.ml" 74 2177 2178 "Permutation.ml" 80 2374 2376
 type(
   unit
 )
-"Permutation.ml" 66 2100 2107 "Permutation.ml" 66 2100 2112
+"Permutation.ml" 82 2390 2397 "Permutation.ml" 82 2390 2402
 type(
   bool
 )
-"Permutation.ml" 67 2116 2123 "Permutation.ml" 67 2116 2136
+"Permutation.ml" 83 2406 2413 "Permutation.ml" 83 2406 2426
 type(
   string list
 )
 ident(
-  def list_of_words "Permutation.ml" 68 2182 2185 "Permutation.ml" 68 2182 2225
+  def list_of_words "Permutation.ml" 84 2472 2475 "Permutation.ml" 84 2472 2515
 )
-"Permutation.ml" 67 2116 2140 "Permutation.ml" 67 2116 2149
+"Permutation.ml" 83 2406 2430 "Permutation.ml" 83 2406 2439
 type(
   Str.regexp -> string -> string list
 )
 ident(
   ext_ref Str.split
 )
-"Permutation.ml" 67 2116 2150 "Permutation.ml" 67 2116 2159
+"Permutation.ml" 83 2406 2440 "Permutation.ml" 83 2406 2449
 type(
   Str.regexp
 )
 ident(
-  int_ref my_regexp "Permutation.ml" 56 1799 1809 "Permutation.ml" 56 1799 1818
+  int_ref my_regexp "Permutation.ml" 72 2089 2099 "Permutation.ml" 72 2089 2108
 )
-"Permutation.ml" 67 2116 2161 "Permutation.ml" 67 2116 2171
+"Permutation.ml" 83 2406 2451 "Permutation.ml" 83 2406 2461
 type(
   in_channel -> string
 )
 ident(
   ext_ref Pervasives.input_line
 )
-"Permutation.ml" 67 2116 2172 "Permutation.ml" 67 2116 2176
+"Permutation.ml" 83 2406 2462 "Permutation.ml" 83 2406 2466
 type(
   in_channel
 )
 ident(
-  int_ref chan "Permutation.ml" 54 1712 1722 "Permutation.ml" 54 1712 1726
+  int_ref chan "Permutation.ml" 70 2002 2012 "Permutation.ml" 70 2002 2016
 )
-"Permutation.ml" 67 2116 2160 "Permutation.ml" 67 2116 2177
+"Permutation.ml" 83 2406 2450 "Permutation.ml" 83 2406 2467
 call(
   stack
 )
 type(
   string
 )
-"Permutation.ml" 67 2116 2139 "Permutation.ml" 67 2116 2178
+"Permutation.ml" 83 2406 2429 "Permutation.ml" 83 2406 2468
 call(
   stack
 )
 type(
   string list
 )
-"Permutation.ml" 68 2182 2185 "Permutation.ml" 68 2182 2194
+"Permutation.ml" 84 2472 2475 "Permutation.ml" 84 2472 2484
 type(
   (string -> unit) -> string list -> unit
 )
 ident(
   ext_ref List.iter
 )
-"Permutation.ml" 68 2182 2195 "Permutation.ml" 68 2182 2210
+"Permutation.ml" 84 2472 2485 "Permutation.ml" 84 2472 2500
 type(
   string -> unit
 )
 ident(
-  int_ref compute_new_map "Permutation.ml" 57 1851 1861 "Permutation.ml" 57 1851 1876
+  int_ref compute_new_map "Permutation.ml" 73 2141 2151 "Permutation.ml" 73 2141 2166
 )
-"Permutation.ml" 68 2182 2211 "Permutation.ml" 68 2182 2224
+"Permutation.ml" 84 2472 2501 "Permutation.ml" 84 2472 2514
 type(
   string list
 )
 ident(
-  int_ref list_of_words "Permutation.ml" 67 2116 2123 "Permutation.ml" 67 2116 2136
+  int_ref list_of_words "Permutation.ml" 83 2406 2413 "Permutation.ml" 83 2406 2426
 )
-"Permutation.ml" 68 2182 2185 "Permutation.ml" 68 2182 2225
+"Permutation.ml" 84 2472 2475 "Permutation.ml" 84 2472 2515
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 67 2116 2119 "Permutation.ml" 68 2182 2225
+"Permutation.ml" 83 2406 2409 "Permutation.ml" 84 2472 2515
 type(
   unit
 )
-"Permutation.ml" 66 2100 2101 "Permutation.ml" 69 2227 2232
+"Permutation.ml" 82 2390 2391 "Permutation.ml" 85 2517 2522
 type(
   unit
 )
-"Permutation.ml" 69 2227 2234 "Permutation.ml" 69 2227 2235
+"Permutation.ml" 85 2517 2524 "Permutation.ml" 85 2517 2525
 type(
   (string, occurence) Hashtbl.t ref -> (string, occurence) Hashtbl.t
 )
 ident(
   ext_ref Pervasives.( ! )
 )
-"Permutation.ml" 69 2227 2235 "Permutation.ml" 69 2227 2242
+"Permutation.ml" 85 2517 2525 "Permutation.ml" 85 2517 2532
 type(
   (string, occurence) Hashtbl.t ref
 )
 ident(
-  int_ref the_map "Permutation.ml" 55 1749 1759 "Permutation.ml" 55 1749 1766
+  int_ref the_map "Permutation.ml" 71 2039 2049 "Permutation.ml" 71 2039 2056
 )
-"Permutation.ml" 69 2227 2234 "Permutation.ml" 69 2227 2242
+"Permutation.ml" 85 2517 2524 "Permutation.ml" 85 2517 2532
 type(
   (string, occurence) Hashtbl.t
 )
-"Permutation.ml" 66 2100 2101 "Permutation.ml" 69 2227 2242
+"Permutation.ml" 82 2390 2391 "Permutation.ml" 85 2517 2532
 type(
   (string, occurence) Hashtbl.t
 )
-"Permutation.ml" 70 2243 2254 "Permutation.ml" 70 2243 2265
+"Permutation.ml" 86 2533 2544 "Permutation.ml" 86 2533 2555
 type(
   exn
 )
-"Permutation.ml" 71 2269 2270 "Permutation.ml" 71 2269 2278
+"Permutation.ml" 87 2559 2560 "Permutation.ml" 87 2559 2568
 type(
   in_channel -> unit
 )
 ident(
   ext_ref Pervasives.close_in
 )
-"Permutation.ml" 71 2269 2279 "Permutation.ml" 71 2269 2283
+"Permutation.ml" 87 2559 2569 "Permutation.ml" 87 2559 2573
 type(
   in_channel
 )
 ident(
-  int_ref chan "Permutation.ml" 54 1712 1722 "Permutation.ml" 54 1712 1726
+  int_ref chan "Permutation.ml" 70 2002 2012 "Permutation.ml" 70 2002 2016
 )
-"Permutation.ml" 71 2269 2270 "Permutation.ml" 71 2269 2283
+"Permutation.ml" 87 2559 2560 "Permutation.ml" 87 2559 2573
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 72 2285 2286 "Permutation.ml" 72 2285 2287
+"Permutation.ml" 88 2575 2576 "Permutation.ml" 88 2575 2577
 type(
   (string, occurence) Hashtbl.t ref -> (string, occurence) Hashtbl.t
 )
 ident(
   ext_ref Pervasives.( ! )
 )
-"Permutation.ml" 72 2285 2287 "Permutation.ml" 72 2285 2294
+"Permutation.ml" 88 2575 2577 "Permutation.ml" 88 2575 2584
 type(
   (string, occurence) Hashtbl.t ref
 )
 ident(
-  int_ref the_map "Permutation.ml" 55 1749 1759 "Permutation.ml" 55 1749 1766
+  int_ref the_map "Permutation.ml" 71 2039 2049 "Permutation.ml" 71 2039 2056
 )
-"Permutation.ml" 72 2285 2286 "Permutation.ml" 72 2285 2294
+"Permutation.ml" 88 2575 2576 "Permutation.ml" 88 2575 2584
 type(
   (string, occurence) Hashtbl.t
 )
-"Permutation.ml" 71 2269 2270 "Permutation.ml" 72 2285 2294
+"Permutation.ml" 87 2559 2560 "Permutation.ml" 88 2575 2584
 type(
   (string, occurence) Hashtbl.t
 )
-"Permutation.ml" 65 2090 2096 "Permutation.ml" 72 2285 2294
+"Permutation.ml" 81 2380 2386 "Permutation.ml" 88 2575 2584
 type(
   (string, occurence) Hashtbl.t
 )
-"Permutation.ml" 57 1851 1857 "Permutation.ml" 72 2285 2294
+"Permutation.ml" 73 2141 2147 "Permutation.ml" 88 2575 2584
 type(
   (string, occurence) Hashtbl.t
 )
-"Permutation.ml" 56 1799 1805 "Permutation.ml" 72 2285 2294
+"Permutation.ml" 72 2089 2095 "Permutation.ml" 88 2575 2584
 type(
   (string, occurence) Hashtbl.t
 )
-"Permutation.ml" 55 1749 1755 "Permutation.ml" 72 2285 2294
+"Permutation.ml" 71 2039 2045 "Permutation.ml" 88 2575 2584
 type(
   (string, occurence) Hashtbl.t
 )
-"Permutation.ml" 54 1712 1718 "Permutation.ml" 72 2285 2294
+"Permutation.ml" 70 2002 2008 "Permutation.ml" 88 2575 2584
 type(
   (string, occurence) Hashtbl.t
 )
-"Permutation.ml" 75 2364 2372 "Permutation.ml" 75 2364 2430
+"Permutation.ml" 91 2654 2662 "Permutation.ml" 91 2654 2720
 type(
-  'c -> IntMap.key -> 'c list IntMap.t -> 'c list IntMap.t
+  'e -> IntMap.key -> 'e list IntMap.t -> 'e list IntMap.t
 )
 ident(
-  def helper_add_apair_occurence_word_to_the_map_occurenceToWord "Permutation.ml" 82 2760 2764 "Permutation.ml" 124 4563 4567
+  def helper_add_apair_occurence_word_to_the_map_occurenceToWord "Permutation.ml" 98 3050 3054 "Permutation.ml" 140 4853 4857
 )
-"Permutation.ml" 75 2364 2431 "Permutation.ml" 75 2364 2438
+"Permutation.ml" 91 2654 2721 "Permutation.ml" 91 2654 2728
 type(
-  'c
+  'e
 )
 ident(
-  def my_word "Permutation.ml" 75 2364 2439 "Permutation.ml" 79 2628 2686
+  def my_word "Permutation.ml" 91 2654 2729 "Permutation.ml" 95 2918 2976
 )
-"Permutation.ml" 75 2364 2439 "Permutation.ml" 75 2364 2451
+"Permutation.ml" 91 2654 2729 "Permutation.ml" 91 2654 2741
 type(
   IntMap.key
 )
 ident(
-  def my_occurence "Permutation.ml" 75 2364 2452 "Permutation.ml" 79 2628 2686
+  def my_occurence "Permutation.ml" 91 2654 2742 "Permutation.ml" 95 2918 2976
 )
-"Permutation.ml" 75 2364 2452 "Permutation.ml" 75 2364 2458
+"Permutation.ml" 91 2654 2742 "Permutation.ml" 91 2654 2748
 type(
-  'c list IntMap.t
+  'e list IntMap.t
 )
 ident(
-  def my_map "Permutation.ml" 76 2461 2467 "Permutation.ml" 79 2628 2686
+  def my_map "Permutation.ml" 92 2751 2757 "Permutation.ml" 95 2918 2976
 )
-"Permutation.ml" 76 2461 2471 "Permutation.ml" 76 2461 2481
+"Permutation.ml" 92 2751 2761 "Permutation.ml" 92 2751 2771
 type(
-  IntMap.key -> 'c list IntMap.t -> bool
+  IntMap.key -> 'e list IntMap.t -> bool
 )
 ident(
   ext_ref IntMap.mem
 )
-"Permutation.ml" 76 2461 2482 "Permutation.ml" 76 2461 2494
+"Permutation.ml" 92 2751 2772 "Permutation.ml" 92 2751 2784
 type(
   IntMap.key
 )
 ident(
-  int_ref my_occurence "Permutation.ml" 75 2364 2439 "Permutation.ml" 75 2364 2451
+  int_ref my_occurence "Permutation.ml" 91 2654 2729 "Permutation.ml" 91 2654 2741
 )
-"Permutation.ml" 76 2461 2495 "Permutation.ml" 76 2461 2501
+"Permutation.ml" 92 2751 2785 "Permutation.ml" 92 2751 2791
 type(
-  'c list IntMap.t
+  'e list IntMap.t
 )
 ident(
-  int_ref my_map "Permutation.ml" 75 2364 2452 "Permutation.ml" 75 2364 2458
+  int_ref my_map "Permutation.ml" 91 2654 2742 "Permutation.ml" 91 2654 2748
 )
-"Permutation.ml" 76 2461 2470 "Permutation.ml" 76 2461 2502
+"Permutation.ml" 92 2751 2760 "Permutation.ml" 92 2751 2792
 call(
   stack
 )
 type(
   bool
 )
-"Permutation.ml" 77 2509 2515 "Permutation.ml" 77 2509 2528
+"Permutation.ml" 93 2799 2805 "Permutation.ml" 93 2799 2818
 type(
-  'c list
+  'e list
 )
 ident(
-  def list_of_words "Permutation.ml" 78 2569 2571 "Permutation.ml" 78 2569 2626
+  def list_of_words "Permutation.ml" 94 2859 2861 "Permutation.ml" 94 2859 2916
 )
-"Permutation.ml" 77 2509 2532 "Permutation.ml" 77 2509 2543
+"Permutation.ml" 93 2799 2822 "Permutation.ml" 93 2799 2833
 type(
-  IntMap.key -> 'c list IntMap.t -> 'c list
+  IntMap.key -> 'e list IntMap.t -> 'e list
 )
 ident(
   ext_ref IntMap.find
 )
-"Permutation.ml" 77 2509 2544 "Permutation.ml" 77 2509 2556
+"Permutation.ml" 93 2799 2834 "Permutation.ml" 93 2799 2846
 type(
   IntMap.key
 )
 ident(
-  int_ref my_occurence "Permutation.ml" 75 2364 2439 "Permutation.ml" 75 2364 2451
+  int_ref my_occurence "Permutation.ml" 91 2654 2729 "Permutation.ml" 91 2654 2741
 )
-"Permutation.ml" 77 2509 2557 "Permutation.ml" 77 2509 2563
+"Permutation.ml" 93 2799 2847 "Permutation.ml" 93 2799 2853
 type(
-  'c list IntMap.t
+  'e list IntMap.t
 )
 ident(
-  int_ref my_map "Permutation.ml" 75 2364 2452 "Permutation.ml" 75 2364 2458
+  int_ref my_map "Permutation.ml" 91 2654 2742 "Permutation.ml" 91 2654 2748
 )
-"Permutation.ml" 77 2509 2531 "Permutation.ml" 77 2509 2564
+"Permutation.ml" 93 2799 2821 "Permutation.ml" 93 2799 2854
 call(
   stack
 )
 type(
-  'c list
+  'e list
 )
-"Permutation.ml" 78 2569 2571 "Permutation.ml" 78 2569 2581
+"Permutation.ml" 94 2859 2861 "Permutation.ml" 94 2859 2871
 type(
-  IntMap.key -> 'c list -> 'c list IntMap.t -> 'c list IntMap.t
+  IntMap.key -> 'e list -> 'e list IntMap.t -> 'e list IntMap.t
 )
 ident(
   ext_ref IntMap.add
 )
-"Permutation.ml" 78 2569 2582 "Permutation.ml" 78 2569 2594
+"Permutation.ml" 94 2859 2872 "Permutation.ml" 94 2859 2884
 type(
   IntMap.key
 )
 ident(
-  int_ref my_occurence "Permutation.ml" 75 2364 2439 "Permutation.ml" 75 2364 2451
+  int_ref my_occurence "Permutation.ml" 91 2654 2729 "Permutation.ml" 91 2654 2741
 )
-"Permutation.ml" 78 2569 2596 "Permutation.ml" 78 2569 2603
+"Permutation.ml" 94 2859 2886 "Permutation.ml" 94 2859 2893
 type(
-  'c
+  'e
 )
 ident(
-  int_ref my_word "Permutation.ml" 75 2364 2431 "Permutation.ml" 75 2364 2438
+  int_ref my_word "Permutation.ml" 91 2654 2721 "Permutation.ml" 91 2654 2728
 )
-"Permutation.ml" 78 2569 2605 "Permutation.ml" 78 2569 2618
+"Permutation.ml" 94 2859 2895 "Permutation.ml" 94 2859 2908
 type(
-  'c list
+  'e list
 )
 ident(
-  int_ref list_of_words "Permutation.ml" 77 2509 2515 "Permutation.ml" 77 2509 2528
+  int_ref list_of_words "Permutation.ml" 93 2799 2805 "Permutation.ml" 93 2799 2818
 )
-"Permutation.ml" 78 2569 2595 "Permutation.ml" 78 2569 2619
+"Permutation.ml" 94 2859 2885 "Permutation.ml" 94 2859 2909
 type(
-  'c list
+  'e list
 )
-"Permutation.ml" 78 2569 2620 "Permutation.ml" 78 2569 2626
+"Permutation.ml" 94 2859 2910 "Permutation.ml" 94 2859 2916
 type(
-  'c list IntMap.t
+  'e list IntMap.t
 )
 ident(
-  int_ref my_map "Permutation.ml" 75 2364 2452 "Permutation.ml" 75 2364 2458
+  int_ref my_map "Permutation.ml" 91 2654 2742 "Permutation.ml" 91 2654 2748
 )
-"Permutation.ml" 78 2569 2571 "Permutation.ml" 78 2569 2626
+"Permutation.ml" 94 2859 2861 "Permutation.ml" 94 2859 2916
 call(
   tail
 )
 type(
-  'c list IntMap.t
+  'e list IntMap.t
 )
-"Permutation.ml" 77 2509 2510 "Permutation.ml" 78 2569 2627
+"Permutation.ml" 93 2799 2800 "Permutation.ml" 94 2859 2917
 type(
-  'c list IntMap.t
+  'e list IntMap.t
 )
-"Permutation.ml" 79 2628 2640 "Permutation.ml" 79 2628 2650
+"Permutation.ml" 95 2918 2930 "Permutation.ml" 95 2918 2940
 type(
-  IntMap.key -> 'c list -> 'c list IntMap.t -> 'c list IntMap.t
+  IntMap.key -> 'e list -> 'e list IntMap.t -> 'e list IntMap.t
 )
 ident(
   ext_ref IntMap.add
 )
-"Permutation.ml" 79 2628 2651 "Permutation.ml" 79 2628 2663
+"Permutation.ml" 95 2918 2941 "Permutation.ml" 95 2918 2953
 type(
   IntMap.key
 )
 ident(
-  int_ref my_occurence "Permutation.ml" 75 2364 2439 "Permutation.ml" 75 2364 2451
+  int_ref my_occurence "Permutation.ml" 91 2654 2729 "Permutation.ml" 91 2654 2741
 )
-"Permutation.ml" 79 2628 2665 "Permutation.ml" 79 2628 2672
+"Permutation.ml" 95 2918 2955 "Permutation.ml" 95 2918 2962
 type(
-  'c
+  'e
 )
 ident(
-  int_ref my_word "Permutation.ml" 75 2364 2431 "Permutation.ml" 75 2364 2438
+  int_ref my_word "Permutation.ml" 91 2654 2721 "Permutation.ml" 91 2654 2728
 )
-"Permutation.ml" 79 2628 2674 "Permutation.ml" 79 2628 2676
+"Permutation.ml" 95 2918 2964 "Permutation.ml" 95 2918 2966
 type(
-  'c list
+  'e list
 )
-"Permutation.ml" 79 2628 2664 "Permutation.ml" 79 2628 2677
+"Permutation.ml" 95 2918 2954 "Permutation.ml" 95 2918 2967
 type(
-  'c list
+  'e list
 )
-"Permutation.ml" 79 2628 2679 "Permutation.ml" 79 2628 2685
+"Permutation.ml" 95 2918 2969 "Permutation.ml" 95 2918 2975
 type(
-  'c list IntMap.t
+  'e list IntMap.t
 )
 ident(
-  int_ref my_map "Permutation.ml" 75 2364 2452 "Permutation.ml" 75 2364 2458
+  int_ref my_map "Permutation.ml" 91 2654 2742 "Permutation.ml" 91 2654 2748
 )
-"Permutation.ml" 79 2628 2639 "Permutation.ml" 79 2628 2686
+"Permutation.ml" 95 2918 2929 "Permutation.ml" 95 2918 2976
 call(
   tail
 )
 type(
-  'c list IntMap.t
+  'e list IntMap.t
 )
-"Permutation.ml" 76 2461 2467 "Permutation.ml" 79 2628 2686
+"Permutation.ml" 92 2751 2757 "Permutation.ml" 95 2918 2976
 type(
-  'c list IntMap.t
+  'e list IntMap.t
 )
-"Permutation.ml" 82 2760 2768 "Permutation.ml" 82 2760 2796
+"Permutation.ml" 98 3050 3058 "Permutation.ml" 98 3050 3086
 type(
-  ('d, occurence) Hashtbl.t -> 'd list IntMap.t
+  ('f, occurence) Hashtbl.t -> 'f list IntMap.t
 )
 ident(
-  def create_map_occurence_to_word "Permutation.ml" 90 3171 3175 "Permutation.ml" 124 4563 4567
+  def create_map_occurence_to_word "Permutation.ml" 106 3461 3465 "Permutation.ml" 140 4853 4857
 )
-"Permutation.ml" 82 2760 2797 "Permutation.ml" 82 2760 2814
+"Permutation.ml" 98 3050 3087 "Permutation.ml" 98 3050 3104
 type(
-  ('d, occurence) Hashtbl.t
+  ('f, occurence) Hashtbl.t
 )
 ident(
-  def word_to_occurence "Permutation.ml" 83 2818 2824 "Permutation.ml" 86 3047 3111
+  def word_to_occurence "Permutation.ml" 99 3108 3114 "Permutation.ml" 102 3337 3401
 )
-"Permutation.ml" 83 2818 2828 "Permutation.ml" 83 2818 2845
+"Permutation.ml" 99 3108 3118 "Permutation.ml" 99 3108 3135
 type(
-  'd list IntMap.t ref
+  'f list IntMap.t ref
 )
-"Permutation.ml" 83 2818 2848 "Permutation.ml" 83 2818 2851
+"Permutation.ml" 99 3108 3138 "Permutation.ml" 99 3108 3141
 type(
-  'd list IntMap.t -> 'd list IntMap.t ref
+  'f list IntMap.t -> 'f list IntMap.t ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"Permutation.ml" 83 2818 2852 "Permutation.ml" 83 2818 2864
+"Permutation.ml" 99 3108 3142 "Permutation.ml" 99 3108 3154
 type(
-  'd list IntMap.t
+  'f list IntMap.t
 )
 ident(
   ext_ref IntMap.empty
 )
-"Permutation.ml" 83 2818 2848 "Permutation.ml" 83 2818 2864
+"Permutation.ml" 99 3108 3138 "Permutation.ml" 99 3108 3154
 type(
-  'd list IntMap.t ref
+  'f list IntMap.t ref
 )
-"Permutation.ml" 84 2868 2878 "Permutation.ml" 84 2868 2886
+"Permutation.ml" 100 3158 3168 "Permutation.ml" 100 3158 3176
 type(
-  'd -> occurence -> unit
+  'f -> occurence -> unit
 )
-"Permutation.ml" 84 2868 2887 "Permutation.ml" 84 2868 2894
+"Permutation.ml" 100 3158 3177 "Permutation.ml" 100 3158 3184
 type(
-  'd
+  'f
 )
 ident(
-  def my_word "Permutation.ml" 84 2868 2895 "Permutation.ml" 85 2911 3043
+  def my_word "Permutation.ml" 100 3158 3185 "Permutation.ml" 101 3201 3333
 )
-"Permutation.ml" 84 2868 2895 "Permutation.ml" 84 2868 2907
+"Permutation.ml" 100 3158 3185 "Permutation.ml" 100 3158 3197
 type(
   occurence
 )
 ident(
-  def my_occurence "Permutation.ml" 85 2911 2912 "Permutation.ml" 85 2911 3043
+  def my_occurence "Permutation.ml" 101 3201 3202 "Permutation.ml" 101 3201 3333
 )
-"Permutation.ml" 85 2911 2913 "Permutation.ml" 85 2911 2930
+"Permutation.ml" 101 3201 3203 "Permutation.ml" 101 3201 3220
 type(
-  'd list IntMap.t ref
+  'f list IntMap.t ref
 )
 ident(
-  int_ref occurence_to_word "Permutation.ml" 83 2818 2828 "Permutation.ml" 83 2818 2845
+  int_ref occurence_to_word "Permutation.ml" 99 3108 3118 "Permutation.ml" 99 3108 3135
 )
-"Permutation.ml" 85 2911 2931 "Permutation.ml" 85 2911 2933
+"Permutation.ml" 101 3201 3221 "Permutation.ml" 101 3201 3223
 type(
-  'd list IntMap.t ref -> 'd list IntMap.t -> unit
+  'f list IntMap.t ref -> 'f list IntMap.t -> unit
 )
 ident(
   ext_ref Pervasives.( := )
 )
-"Permutation.ml" 85 2911 2935 "Permutation.ml" 85 2911 2993
+"Permutation.ml" 101 3201 3225 "Permutation.ml" 101 3201 3283
 type(
-  'd -> IntMap.key -> 'd list IntMap.t -> 'd list IntMap.t
+  'f -> IntMap.key -> 'f list IntMap.t -> 'f list IntMap.t
 )
 ident(
-  int_ref helper_add_apair_occurence_word_to_the_map_occurenceToWord "Permutation.ml" 75 2364 2372 "Permutation.ml" 75 2364 2430
+  int_ref helper_add_apair_occurence_word_to_the_map_occurenceToWord "Permutation.ml" 91 2654 2662 "Permutation.ml" 91 2654 2720
 )
-"Permutation.ml" 85 2911 2994 "Permutation.ml" 85 2911 3001
+"Permutation.ml" 101 3201 3284 "Permutation.ml" 101 3201 3291
 type(
-  'd
+  'f
 )
 ident(
-  int_ref my_word "Permutation.ml" 84 2868 2887 "Permutation.ml" 84 2868 2894
+  int_ref my_word "Permutation.ml" 100 3158 3177 "Permutation.ml" 100 3158 3184
 )
-"Permutation.ml" 85 2911 3002 "Permutation.ml" 85 2911 3014
+"Permutation.ml" 101 3201 3292 "Permutation.ml" 101 3201 3304
 type(
   occurence
 )
 ident(
-  int_ref my_occurence "Permutation.ml" 84 2868 2895 "Permutation.ml" 84 2868 2907
+  int_ref my_occurence "Permutation.ml" 100 3158 3185 "Permutation.ml" 100 3158 3197
 )
-"Permutation.ml" 85 2911 3002 "Permutation.ml" 85 2911 3022
+"Permutation.ml" 101 3201 3292 "Permutation.ml" 101 3201 3312
 type(
   IntMap.key
 )
-"Permutation.ml" 85 2911 3023 "Permutation.ml" 85 2911 3024
+"Permutation.ml" 101 3201 3313 "Permutation.ml" 101 3201 3314
 type(
-  'd list IntMap.t ref -> 'd list IntMap.t
+  'f list IntMap.t ref -> 'f list IntMap.t
 )
 ident(
   ext_ref Pervasives.( ! )
 )
-"Permutation.ml" 85 2911 3024 "Permutation.ml" 85 2911 3041
+"Permutation.ml" 101 3201 3314 "Permutation.ml" 101 3201 3331
 type(
-  'd list IntMap.t ref
+  'f list IntMap.t ref
 )
 ident(
-  int_ref occurence_to_word "Permutation.ml" 83 2818 2828 "Permutation.ml" 83 2818 2845
+  int_ref occurence_to_word "Permutation.ml" 99 3108 3118 "Permutation.ml" 99 3108 3135
 )
-"Permutation.ml" 85 2911 3023 "Permutation.ml" 85 2911 3041
+"Permutation.ml" 101 3201 3313 "Permutation.ml" 101 3201 3331
 type(
-  'd list IntMap.t
+  'f list IntMap.t
 )
-"Permutation.ml" 85 2911 2934 "Permutation.ml" 85 2911 3042
+"Permutation.ml" 101 3201 3224 "Permutation.ml" 101 3201 3332
 call(
   stack
 )
 type(
-  'd list IntMap.t
+  'f list IntMap.t
 )
-"Permutation.ml" 85 2911 2912 "Permutation.ml" 85 2911 3043
+"Permutation.ml" 101 3201 3202 "Permutation.ml" 101 3201 3333
 type(
   unit
 )
-"Permutation.ml" 86 3047 3053 "Permutation.ml" 86 3047 3065
+"Permutation.ml" 102 3337 3343 "Permutation.ml" 102 3337 3355
 type(
-  ('d -> occurence -> unit) -> ('d, occurence) Hashtbl.t -> unit
+  ('f -> occurence -> unit) -> ('f, occurence) Hashtbl.t -> unit
 )
 ident(
   ext_ref Hashtbl.iter
 )
-"Permutation.ml" 86 3047 3066 "Permutation.ml" 86 3047 3074
+"Permutation.ml" 102 3337 3356 "Permutation.ml" 102 3337 3364
 type(
-  'd -> occurence -> unit
+  'f -> occurence -> unit
 )
 ident(
-  int_ref help_map "Permutation.ml" 84 2868 2878 "Permutation.ml" 84 2868 2886
+  int_ref help_map "Permutation.ml" 100 3158 3168 "Permutation.ml" 100 3158 3176
 )
-"Permutation.ml" 86 3047 3075 "Permutation.ml" 86 3047 3092
+"Permutation.ml" 102 3337 3365 "Permutation.ml" 102 3337 3382
 type(
-  ('d, occurence) Hashtbl.t
+  ('f, occurence) Hashtbl.t
 )
 ident(
-  int_ref word_to_occurence "Permutation.ml" 82 2760 2797 "Permutation.ml" 82 2760 2814
+  int_ref word_to_occurence "Permutation.ml" 98 3050 3087 "Permutation.ml" 98 3050 3104
 )
-"Permutation.ml" 86 3047 3053 "Permutation.ml" 86 3047 3092
+"Permutation.ml" 102 3337 3343 "Permutation.ml" 102 3337 3382
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 86 3047 3093 "Permutation.ml" 86 3047 3094
+"Permutation.ml" 102 3337 3383 "Permutation.ml" 102 3337 3384
 type(
-  'd list IntMap.t ref -> 'd list IntMap.t
+  'f list IntMap.t ref -> 'f list IntMap.t
 )
 ident(
   ext_ref Pervasives.( ! )
 )
-"Permutation.ml" 86 3047 3094 "Permutation.ml" 86 3047 3111
+"Permutation.ml" 102 3337 3384 "Permutation.ml" 102 3337 3401
 type(
-  'd list IntMap.t ref
+  'f list IntMap.t ref
 )
 ident(
-  int_ref occurence_to_word "Permutation.ml" 83 2818 2828 "Permutation.ml" 83 2818 2845
+  int_ref occurence_to_word "Permutation.ml" 99 3108 3118 "Permutation.ml" 99 3108 3135
 )
-"Permutation.ml" 86 3047 3093 "Permutation.ml" 86 3047 3111
+"Permutation.ml" 102 3337 3383 "Permutation.ml" 102 3337 3401
 type(
-  'd list IntMap.t
+  'f list IntMap.t
 )
-"Permutation.ml" 86 3047 3053 "Permutation.ml" 86 3047 3111
+"Permutation.ml" 102 3337 3343 "Permutation.ml" 102 3337 3401
 type(
-  'd list IntMap.t
+  'f list IntMap.t
 )
-"Permutation.ml" 84 2868 2874 "Permutation.ml" 86 3047 3111
+"Permutation.ml" 100 3158 3164 "Permutation.ml" 102 3337 3401
 type(
-  'd list IntMap.t
+  'f list IntMap.t
 )
-"Permutation.ml" 83 2818 2824 "Permutation.ml" 86 3047 3111
+"Permutation.ml" 99 3108 3114 "Permutation.ml" 102 3337 3401
 type(
-  'd list IntMap.t
+  'f list IntMap.t
 )
-"Permutation.ml" 90 3171 3183 "Permutation.ml" 90 3171 3206
+"Permutation.ml" 106 3461 3473 "Permutation.ml" 106 3461 3496
 type(
   (string, occurence) Hashtbl.t -> unit
 )
 ident(
-  def print_word_to_occurence "Permutation.ml" 90 3171 3175 "Permutation.ml" 124 4563 4567
+  def print_word_to_occurence "Permutation.ml" 106 3461 3465 "Permutation.ml" 140 4853 4857
 )
-"Permutation.ml" 90 3171 3207 "Permutation.ml" 90 3171 3213
+"Permutation.ml" 106 3461 3497 "Permutation.ml" 106 3461 3503
 type(
   (string, occurence) Hashtbl.t
 )
 ident(
-  def my_map "Permutation.ml" 91 3216 3222 "Permutation.ml" 98 3469 3510
+  def my_map "Permutation.ml" 107 3506 3512 "Permutation.ml" 114 3759 3800
 )
-"Permutation.ml" 91 3216 3222 "Permutation.ml" 91 3216 3234
+"Permutation.ml" 107 3506 3512 "Permutation.ml" 107 3506 3524
 type(
   string -> unit
 )
 ident(
   ext_ref Pervasives.print_string
 )
-"Permutation.ml" 91 3216 3235 "Permutation.ml" 91 3216 3255
+"Permutation.ml" 107 3506 3525 "Permutation.ml" 107 3506 3545
 type(
   string
 )
-"Permutation.ml" 91 3216 3222 "Permutation.ml" 91 3216 3255
+"Permutation.ml" 107 3506 3512 "Permutation.ml" 107 3506 3545
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 92 3257 3267 "Permutation.ml" 92 3257 3282
+"Permutation.ml" 108 3547 3557 "Permutation.ml" 108 3547 3572
 type(
   string -> occurence -> unit
 )
-"Permutation.ml" 92 3257 3283 "Permutation.ml" 92 3257 3289
+"Permutation.ml" 108 3547 3573 "Permutation.ml" 108 3547 3579
 type(
   string
 )
 ident(
-  def my_key "Permutation.ml" 92 3257 3290 "Permutation.ml" 96 3439 3458
+  def my_key "Permutation.ml" 108 3547 3580 "Permutation.ml" 112 3729 3748
 )
-"Permutation.ml" 92 3257 3290 "Permutation.ml" 92 3257 3298
+"Permutation.ml" 108 3547 3580 "Permutation.ml" 108 3547 3588
 type(
   occurence
 )
 ident(
-  def my_value "Permutation.ml" 93 3302 3303 "Permutation.ml" 96 3439 3458
+  def my_value "Permutation.ml" 109 3592 3593 "Permutation.ml" 112 3729 3748
 )
-"Permutation.ml" 93 3302 3303 "Permutation.ml" 93 3302 3315
+"Permutation.ml" 109 3592 3593 "Permutation.ml" 109 3592 3605
 type(
   string -> unit
 )
 ident(
   ext_ref Pervasives.print_string
 )
-"Permutation.ml" 93 3302 3316 "Permutation.ml" 93 3302 3346
+"Permutation.ml" 109 3592 3606 "Permutation.ml" 109 3592 3636
 type(
   string
 )
-"Permutation.ml" 93 3302 3303 "Permutation.ml" 93 3302 3346
+"Permutation.ml" 109 3592 3593 "Permutation.ml" 109 3592 3636
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 94 3348 3349 "Permutation.ml" 94 3348 3361
+"Permutation.ml" 110 3638 3639 "Permutation.ml" 110 3638 3651
 type(
   string -> unit
 )
 ident(
   ext_ref Pervasives.print_string
 )
-"Permutation.ml" 94 3348 3362 "Permutation.ml" 94 3348 3368
+"Permutation.ml" 110 3638 3652 "Permutation.ml" 110 3638 3658
 type(
   string
 )
 ident(
-  int_ref my_key "Permutation.ml" 92 3257 3283 "Permutation.ml" 92 3257 3289
+  int_ref my_key "Permutation.ml" 108 3547 3573 "Permutation.ml" 108 3547 3579
 )
-"Permutation.ml" 94 3348 3349 "Permutation.ml" 94 3348 3368
+"Permutation.ml" 110 3638 3639 "Permutation.ml" 110 3638 3658
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 94 3348 3369 "Permutation.ml" 94 3348 3381
+"Permutation.ml" 110 3638 3659 "Permutation.ml" 110 3638 3671
 type(
   string -> unit
 )
 ident(
   ext_ref Pervasives.print_string
 )
-"Permutation.ml" 94 3348 3382 "Permutation.ml" 94 3348 3386
+"Permutation.ml" 110 3638 3672 "Permutation.ml" 110 3638 3676
 type(
   string
 )
-"Permutation.ml" 94 3348 3369 "Permutation.ml" 94 3348 3386
+"Permutation.ml" 110 3638 3659 "Permutation.ml" 110 3638 3676
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 95 3388 3390 "Permutation.ml" 95 3388 3402
+"Permutation.ml" 111 3678 3680 "Permutation.ml" 111 3678 3692
 type(
   string -> unit
 )
 ident(
   ext_ref Pervasives.print_string
 )
-"Permutation.ml" 95 3388 3404 "Permutation.ml" 95 3388 3417
+"Permutation.ml" 111 3678 3694 "Permutation.ml" 111 3678 3707
 type(
   int -> string
 )
 ident(
   ext_ref Pervasives.string_of_int
 )
-"Permutation.ml" 95 3388 3418 "Permutation.ml" 95 3388 3426
+"Permutation.ml" 111 3678 3708 "Permutation.ml" 111 3678 3716
 type(
   occurence
 )
 ident(
-  int_ref my_value "Permutation.ml" 92 3257 3290 "Permutation.ml" 92 3257 3298
+  int_ref my_value "Permutation.ml" 108 3547 3580 "Permutation.ml" 108 3547 3588
 )
-"Permutation.ml" 95 3388 3417 "Permutation.ml" 95 3388 3435
+"Permutation.ml" 111 3678 3707 "Permutation.ml" 111 3678 3725
 type(
   int
 )
-"Permutation.ml" 95 3388 3403 "Permutation.ml" 95 3388 3436
+"Permutation.ml" 111 3678 3693 "Permutation.ml" 111 3678 3726
 call(
   stack
 )
 type(
   string
 )
-"Permutation.ml" 95 3388 3389 "Permutation.ml" 95 3388 3437
+"Permutation.ml" 111 3678 3679 "Permutation.ml" 111 3678 3727
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 96 3439 3440 "Permutation.ml" 96 3439 3452
+"Permutation.ml" 112 3729 3730 "Permutation.ml" 112 3729 3742
 type(
   string -> unit
 )
 ident(
   ext_ref Pervasives.print_string
 )
-"Permutation.ml" 96 3439 3453 "Permutation.ml" 96 3439 3457
+"Permutation.ml" 112 3729 3743 "Permutation.ml" 112 3729 3747
 type(
   string
 )
-"Permutation.ml" 96 3439 3440 "Permutation.ml" 96 3439 3458
+"Permutation.ml" 112 3729 3730 "Permutation.ml" 112 3729 3748
 call(
   tail
 )
 type(
   unit
 )
-"Permutation.ml" 95 3388 3389 "Permutation.ml" 96 3439 3458
+"Permutation.ml" 111 3678 3679 "Permutation.ml" 112 3729 3748
 type(
   unit
 )
-"Permutation.ml" 94 3348 3369 "Permutation.ml" 96 3439 3458
+"Permutation.ml" 110 3638 3659 "Permutation.ml" 112 3729 3748
 type(
   unit
 )
-"Permutation.ml" 94 3348 3349 "Permutation.ml" 96 3439 3458
+"Permutation.ml" 110 3638 3639 "Permutation.ml" 112 3729 3748
 type(
   unit
 )
-"Permutation.ml" 93 3302 3303 "Permutation.ml" 96 3439 3458
+"Permutation.ml" 109 3592 3593 "Permutation.ml" 112 3729 3748
 type(
   unit
 )
-"Permutation.ml" 98 3469 3475 "Permutation.ml" 98 3469 3487
+"Permutation.ml" 114 3759 3765 "Permutation.ml" 114 3759 3777
 type(
   (string -> occurence -> unit) -> (string, occurence) Hashtbl.t -> unit
 )
 ident(
   ext_ref Hashtbl.iter
 )
-"Permutation.ml" 98 3469 3488 "Permutation.ml" 98 3469 3503
+"Permutation.ml" 114 3759 3778 "Permutation.ml" 114 3759 3793
 type(
   string -> occurence -> unit
 )
 ident(
-  int_ref print_key_value "Permutation.ml" 92 3257 3267 "Permutation.ml" 92 3257 3282
+  int_ref print_key_value "Permutation.ml" 108 3547 3557 "Permutation.ml" 108 3547 3572
 )
-"Permutation.ml" 98 3469 3504 "Permutation.ml" 98 3469 3510
+"Permutation.ml" 114 3759 3794 "Permutation.ml" 114 3759 3800
 type(
   (string, occurence) Hashtbl.t
 )
 ident(
-  int_ref my_map "Permutation.ml" 90 3171 3207 "Permutation.ml" 90 3171 3213
+  int_ref my_map "Permutation.ml" 106 3461 3497 "Permutation.ml" 106 3461 3503
 )
-"Permutation.ml" 98 3469 3475 "Permutation.ml" 98 3469 3510
+"Permutation.ml" 114 3759 3765 "Permutation.ml" 114 3759 3800
 call(
   tail
 )
 type(
   unit
 )
-"Permutation.ml" 92 3257 3263 "Permutation.ml" 98 3469 3510
+"Permutation.ml" 108 3547 3553 "Permutation.ml" 114 3759 3800
 type(
   unit
 )
-"Permutation.ml" 91 3216 3222 "Permutation.ml" 98 3469 3510
+"Permutation.ml" 107 3506 3512 "Permutation.ml" 114 3759 3800
 type(
   unit
 )
-"Permutation.ml" 100 3514 3523 "Permutation.ml" 100 3514 3546
+"Permutation.ml" 116 3804 3813 "Permutation.ml" 116 3804 3836
 type(
   string list IntMap.t -> string list IntMap.t
 )
 ident(
-  def print_occurence_to_word "Permutation.ml" 111 3942 3946 "Permutation.ml" 124 4563 4567
+  def print_occurence_to_word "Permutation.ml" 127 4232 4236 "Permutation.ml" 140 4853 4857
 )
-"Permutation.ml" 100 3514 3547 "Permutation.ml" 100 3514 3553
+"Permutation.ml" 116 3804 3837 "Permutation.ml" 116 3804 3843
 type(
   string list IntMap.t
 )
 ident(
-  def my_map "Permutation.ml" 101 3556 3562 "Permutation.ml" 108 3788 3835
+  def my_map "Permutation.ml" 117 3846 3852 "Permutation.ml" 124 4078 4125
 )
-"Permutation.ml" 101 3556 3562 "Permutation.ml" 101 3556 3574
+"Permutation.ml" 117 3846 3852 "Permutation.ml" 117 3846 3864
 type(
   string -> unit
 )
 ident(
   ext_ref Pervasives.print_string
 )
-"Permutation.ml" 101 3556 3575 "Permutation.ml" 101 3556 3595
+"Permutation.ml" 117 3846 3865 "Permutation.ml" 117 3846 3885
 type(
   string
 )
-"Permutation.ml" 101 3556 3562 "Permutation.ml" 101 3556 3595
+"Permutation.ml" 117 3846 3852 "Permutation.ml" 117 3846 3885
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 102 3597 3607 "Permutation.ml" 102 3597 3622
+"Permutation.ml" 118 3887 3897 "Permutation.ml" 118 3887 3912
 type(
   int -> string list -> unit
 )
-"Permutation.ml" 102 3597 3623 "Permutation.ml" 102 3597 3629
+"Permutation.ml" 118 3887 3913 "Permutation.ml" 118 3887 3919
 type(
   int
 )
 ident(
-  def my_key "Permutation.ml" 102 3597 3630 "Permutation.ml" 106 3759 3778
+  def my_key "Permutation.ml" 118 3887 3920 "Permutation.ml" 122 4049 4068
 )
-"Permutation.ml" 102 3597 3630 "Permutation.ml" 102 3597 3638
+"Permutation.ml" 118 3887 3920 "Permutation.ml" 118 3887 3928
 type(
   string list
 )
 ident(
-  def my_value "Permutation.ml" 103 3641 3642 "Permutation.ml" 106 3759 3778
+  def my_value "Permutation.ml" 119 3931 3932 "Permutation.ml" 122 4049 4068
 )
-"Permutation.ml" 103 3641 3642 "Permutation.ml" 103 3641 3654
+"Permutation.ml" 119 3931 3932 "Permutation.ml" 119 3931 3944
 type(
   string -> unit
 )
 ident(
   ext_ref Pervasives.print_string
 )
-"Permutation.ml" 103 3641 3655 "Permutation.ml" 103 3641 3686
+"Permutation.ml" 119 3931 3945 "Permutation.ml" 119 3931 3976
 type(
   string
 )
-"Permutation.ml" 103 3641 3642 "Permutation.ml" 103 3641 3686
+"Permutation.ml" 119 3931 3932 "Permutation.ml" 119 3931 3976
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 104 3688 3689 "Permutation.ml" 104 3688 3698
+"Permutation.ml" 120 3978 3979 "Permutation.ml" 120 3978 3988
 type(
   int -> unit
 )
 ident(
   ext_ref Pervasives.print_int
 )
-"Permutation.ml" 104 3688 3699 "Permutation.ml" 104 3688 3705
+"Permutation.ml" 120 3978 3989 "Permutation.ml" 120 3978 3995
 type(
   int
 )
 ident(
-  int_ref my_key "Permutation.ml" 102 3597 3623 "Permutation.ml" 102 3597 3629
+  int_ref my_key "Permutation.ml" 118 3887 3913 "Permutation.ml" 118 3887 3919
 )
-"Permutation.ml" 104 3688 3689 "Permutation.ml" 104 3688 3705
+"Permutation.ml" 120 3978 3979 "Permutation.ml" 120 3978 3995
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 104 3688 3706 "Permutation.ml" 104 3688 3718
+"Permutation.ml" 120 3978 3996 "Permutation.ml" 120 3978 4008
 type(
   string -> unit
 )
 ident(
   ext_ref Pervasives.print_string
 )
-"Permutation.ml" 104 3688 3719 "Permutation.ml" 104 3688 3723
+"Permutation.ml" 120 3978 4009 "Permutation.ml" 120 3978 4013
 type(
   string
 )
-"Permutation.ml" 104 3688 3706 "Permutation.ml" 104 3688 3723
+"Permutation.ml" 120 3978 3996 "Permutation.ml" 120 3978 4013
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 105 3725 3726 "Permutation.ml" 105 3725 3748
+"Permutation.ml" 121 4015 4016 "Permutation.ml" 121 4015 4038
 type(
   string list -> unit
 )
 ident(
   int_ref print_my_list_of_words "Permutation.ml" 19 648 656 "Permutation.ml" 19 648 678
 )
-"Permutation.ml" 105 3725 3749 "Permutation.ml" 105 3725 3757
+"Permutation.ml" 121 4015 4039 "Permutation.ml" 121 4015 4047
 type(
   string list
 )
 ident(
-  int_ref my_value "Permutation.ml" 102 3597 3630 "Permutation.ml" 102 3597 3638
+  int_ref my_value "Permutation.ml" 118 3887 3920 "Permutation.ml" 118 3887 3928
 )
-"Permutation.ml" 105 3725 3726 "Permutation.ml" 105 3725 3757
+"Permutation.ml" 121 4015 4016 "Permutation.ml" 121 4015 4047
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 106 3759 3760 "Permutation.ml" 106 3759 3772
+"Permutation.ml" 122 4049 4050 "Permutation.ml" 122 4049 4062
 type(
   string -> unit
 )
 ident(
   ext_ref Pervasives.print_string
 )
-"Permutation.ml" 106 3759 3773 "Permutation.ml" 106 3759 3777
+"Permutation.ml" 122 4049 4063 "Permutation.ml" 122 4049 4067
 type(
   string
 )
-"Permutation.ml" 106 3759 3760 "Permutation.ml" 106 3759 3778
+"Permutation.ml" 122 4049 4050 "Permutation.ml" 122 4049 4068
 call(
   tail
 )
 type(
   unit
 )
-"Permutation.ml" 105 3725 3726 "Permutation.ml" 106 3759 3778
+"Permutation.ml" 121 4015 4016 "Permutation.ml" 122 4049 4068
 type(
   unit
 )
-"Permutation.ml" 104 3688 3706 "Permutation.ml" 106 3759 3778
+"Permutation.ml" 120 3978 3996 "Permutation.ml" 122 4049 4068
 type(
   unit
 )
-"Permutation.ml" 104 3688 3689 "Permutation.ml" 106 3759 3778
+"Permutation.ml" 120 3978 3979 "Permutation.ml" 122 4049 4068
 type(
   unit
 )
-"Permutation.ml" 103 3641 3642 "Permutation.ml" 106 3759 3778
+"Permutation.ml" 119 3931 3932 "Permutation.ml" 122 4049 4068
 type(
   unit
 )
-"Permutation.ml" 108 3788 3794 "Permutation.ml" 108 3788 3805
+"Permutation.ml" 124 4078 4084 "Permutation.ml" 124 4078 4095
 type(
   (IntMap.key -> string list -> unit) -> string list IntMap.t -> unit
 )
 ident(
   ext_ref IntMap.iter
 )
-"Permutation.ml" 108 3788 3806 "Permutation.ml" 108 3788 3821
+"Permutation.ml" 124 4078 4096 "Permutation.ml" 124 4078 4111
 type(
   IntMap.key -> string list -> unit
 )
 ident(
-  int_ref print_key_value "Permutation.ml" 102 3597 3607 "Permutation.ml" 102 3597 3622
+  int_ref print_key_value "Permutation.ml" 118 3887 3897 "Permutation.ml" 118 3887 3912
 )
-"Permutation.ml" 108 3788 3822 "Permutation.ml" 108 3788 3828
+"Permutation.ml" 124 4078 4112 "Permutation.ml" 124 4078 4118
 type(
   string list IntMap.t
 )
 ident(
-  int_ref my_map "Permutation.ml" 100 3514 3547 "Permutation.ml" 100 3514 3553
+  int_ref my_map "Permutation.ml" 116 3804 3837 "Permutation.ml" 116 3804 3843
 )
-"Permutation.ml" 108 3788 3794 "Permutation.ml" 108 3788 3828
+"Permutation.ml" 124 4078 4084 "Permutation.ml" 124 4078 4118
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 108 3788 3829 "Permutation.ml" 108 3788 3835
+"Permutation.ml" 124 4078 4119 "Permutation.ml" 124 4078 4125
 type(
   string list IntMap.t
 )
 ident(
-  int_ref my_map "Permutation.ml" 100 3514 3547 "Permutation.ml" 100 3514 3553
+  int_ref my_map "Permutation.ml" 116 3804 3837 "Permutation.ml" 116 3804 3843
 )
-"Permutation.ml" 108 3788 3794 "Permutation.ml" 108 3788 3835
+"Permutation.ml" 124 4078 4084 "Permutation.ml" 124 4078 4125
 type(
   string list IntMap.t
 )
-"Permutation.ml" 102 3597 3603 "Permutation.ml" 108 3788 3835
+"Permutation.ml" 118 3887 3893 "Permutation.ml" 124 4078 4125
 type(
   string list IntMap.t
 )
-"Permutation.ml" 101 3556 3562 "Permutation.ml" 108 3788 3835
+"Permutation.ml" 117 3846 3852 "Permutation.ml" 124 4078 4125
 type(
   string list IntMap.t
 )
-"Permutation.ml" 111 3942 3950 "Permutation.ml" 111 3942 3970
+"Permutation.ml" 127 4232 4240 "Permutation.ml" 127 4232 4260
 type(
   (string, occurence) Hashtbl.t
 )
 ident(
-  def myMapWordToOccurence "Permutation.ml" 112 4032 4033 "Permutation.ml" 122 4512 4559
+  def myMapWordToOccurence "Permutation.ml" 128 4322 4323 "Permutation.ml" 138 4802 4849
 )
-"Permutation.ml" 111 3942 3973 "Permutation.ml" 111 3942 4017
+"Permutation.ml" 127 4232 4263 "Permutation.ml" 127 4232 4307
 type(
   string -> (string, occurence) Hashtbl.t
 )
 ident(
-  int_ref create_a_map_word_occurence_from_a_text_file "Permutation.ml" 53 1647 1655 "Permutation.ml" 53 1647 1699
+  int_ref create_a_map_word_occurence_from_a_text_file "Permutation.ml" 69 1937 1945 "Permutation.ml" 69 1937 1989
 )
-"Permutation.ml" 111 3942 4018 "Permutation.ml" 111 3942 4028
+"Permutation.ml" 127 4232 4308 "Permutation.ml" 127 4232 4318
 type(
   string
 )
-"Permutation.ml" 111 3942 3973 "Permutation.ml" 111 3942 4028
+"Permutation.ml" 127 4232 4263 "Permutation.ml" 127 4232 4318
 call(
   stack
 )
 type(
   (string, occurence) Hashtbl.t
 )
-"Permutation.ml" 112 4032 4037 "Permutation.ml" 112 4032 4057
+"Permutation.ml" 128 4322 4327 "Permutation.ml" 128 4322 4347
 type(
   string list IntMap.t
 )
 ident(
-  def myMapOccurenceToWord "Permutation.ml" 113 4113 4114 "Permutation.ml" 122 4512 4559
+  def myMapOccurenceToWord "Permutation.ml" 129 4403 4404 "Permutation.ml" 138 4802 4849
 )
-"Permutation.ml" 112 4032 4060 "Permutation.ml" 112 4032 4088
+"Permutation.ml" 128 4322 4350 "Permutation.ml" 128 4322 4378
 type(
   (string, occurence) Hashtbl.t -> string list IntMap.t
 )
 ident(
-  int_ref create_map_occurence_to_word "Permutation.ml" 82 2760 2768 "Permutation.ml" 82 2760 2796
+  int_ref create_map_occurence_to_word "Permutation.ml" 98 3050 3058 "Permutation.ml" 98 3050 3086
 )
-"Permutation.ml" 112 4032 4089 "Permutation.ml" 112 4032 4109
+"Permutation.ml" 128 4322 4379 "Permutation.ml" 128 4322 4399
 type(
   (string, occurence) Hashtbl.t
 )
 ident(
-  int_ref myMapWordToOccurence "Permutation.ml" 111 3942 3950 "Permutation.ml" 111 3942 3970
+  int_ref myMapWordToOccurence "Permutation.ml" 127 4232 4240 "Permutation.ml" 127 4232 4260
 )
-"Permutation.ml" 112 4032 4060 "Permutation.ml" 112 4032 4109
+"Permutation.ml" 128 4322 4350 "Permutation.ml" 128 4322 4399
 call(
   stack
 )
 type(
   string list IntMap.t
 )
-"Permutation.ml" 113 4113 4118 "Permutation.ml" 113 4113 4133
+"Permutation.ml" 129 4403 4408 "Permutation.ml" 129 4403 4423
 type(
   int ref
 )
 ident(
-  def number_of_words "Permutation.ml" 114 4145 4146 "Permutation.ml" 122 4512 4559
+  def number_of_words "Permutation.ml" 130 4435 4436 "Permutation.ml" 138 4802 4849
 )
-"Permutation.ml" 113 4113 4136 "Permutation.ml" 113 4113 4139
+"Permutation.ml" 129 4403 4426 "Permutation.ml" 129 4403 4429
 type(
   int -> int ref
 )
 ident(
   ext_ref Pervasives.ref
 )
-"Permutation.ml" 113 4113 4140 "Permutation.ml" 113 4113 4141
+"Permutation.ml" 129 4403 4430 "Permutation.ml" 129 4403 4431
 type(
   int
 )
-"Permutation.ml" 113 4113 4136 "Permutation.ml" 113 4113 4141
+"Permutation.ml" 129 4403 4426 "Permutation.ml" 129 4403 4431
 type(
   int ref
 )
-"Permutation.ml" 114 4145 4150 "Permutation.ml" 114 4145 4161
+"Permutation.ml" 130 4435 4440 "Permutation.ml" 130 4435 4451
 type(
-  'e -> occurence -> unit
+  'g -> occurence -> unit
 )
 ident(
-  def count_words "Permutation.ml" 115 4238 4239 "Permutation.ml" 122 4512 4559
+  def count_words "Permutation.ml" 131 4528 4529 "Permutation.ml" 138 4802 4849
 )
-"Permutation.ml" 114 4145 4162 "Permutation.ml" 114 4145 4166
+"Permutation.ml" 130 4435 4452 "Permutation.ml" 130 4435 4456
 type(
-  'e
+  'g
 )
 ident(
-  def word "Permutation.ml" 114 4145 4167 "Permutation.ml" 114 4145 4234
+  def word "Permutation.ml" 130 4435 4457 "Permutation.ml" 130 4435 4524
 )
-"Permutation.ml" 114 4145 4167 "Permutation.ml" 114 4145 4176
+"Permutation.ml" 130 4435 4457 "Permutation.ml" 130 4435 4466
 type(
   occurence
 )
 ident(
-  def occurence "Permutation.ml" 114 4145 4179 "Permutation.ml" 114 4145 4234
+  def occurence "Permutation.ml" 130 4435 4469 "Permutation.ml" 130 4435 4524
 )
-"Permutation.ml" 114 4145 4179 "Permutation.ml" 114 4145 4194
+"Permutation.ml" 130 4435 4469 "Permutation.ml" 130 4435 4484
 type(
   int ref
 )
 ident(
-  int_ref number_of_words "Permutation.ml" 113 4113 4118 "Permutation.ml" 113 4113 4133
+  int_ref number_of_words "Permutation.ml" 129 4403 4408 "Permutation.ml" 129 4403 4423
 )
-"Permutation.ml" 114 4145 4195 "Permutation.ml" 114 4145 4197
+"Permutation.ml" 130 4435 4485 "Permutation.ml" 130 4435 4487
 type(
   int ref -> int -> unit
 )
 ident(
   ext_ref Pervasives.( := )
 )
-"Permutation.ml" 114 4145 4198 "Permutation.ml" 114 4145 4199
+"Permutation.ml" 130 4435 4488 "Permutation.ml" 130 4435 4489
 type(
   int ref -> int
 )
 ident(
   ext_ref Pervasives.( ! )
 )
-"Permutation.ml" 114 4145 4199 "Permutation.ml" 114 4145 4214
+"Permutation.ml" 130 4435 4489 "Permutation.ml" 130 4435 4504
 type(
   int ref
 )
 ident(
-  int_ref number_of_words "Permutation.ml" 113 4113 4118 "Permutation.ml" 113 4113 4133
+  int_ref number_of_words "Permutation.ml" 129 4403 4408 "Permutation.ml" 129 4403 4423
 )
-"Permutation.ml" 114 4145 4198 "Permutation.ml" 114 4145 4214
+"Permutation.ml" 130 4435 4488 "Permutation.ml" 130 4435 4504
 type(
   int
 )
-"Permutation.ml" 114 4145 4215 "Permutation.ml" 114 4145 4216
+"Permutation.ml" 130 4435 4505 "Permutation.ml" 130 4435 4506
 type(
   int -> int -> int
 )
 ident(
   ext_ref Pervasives.( + )
 )
-"Permutation.ml" 114 4145 4217 "Permutation.ml" 114 4145 4226
+"Permutation.ml" 130 4435 4507 "Permutation.ml" 130 4435 4516
 type(
   occurence
 )
 ident(
-  int_ref occurence "Permutation.ml" 114 4145 4167 "Permutation.ml" 114 4145 4176
+  int_ref occurence "Permutation.ml" 130 4435 4457 "Permutation.ml" 130 4435 4466
 )
-"Permutation.ml" 114 4145 4217 "Permutation.ml" 114 4145 4234
+"Permutation.ml" 130 4435 4507 "Permutation.ml" 130 4435 4524
 type(
   int
 )
-"Permutation.ml" 114 4145 4198 "Permutation.ml" 114 4145 4234
+"Permutation.ml" 130 4435 4488 "Permutation.ml" 130 4435 4524
 type(
   int
 )
-"Permutation.ml" 114 4145 4179 "Permutation.ml" 114 4145 4234
+"Permutation.ml" 130 4435 4469 "Permutation.ml" 130 4435 4524
 type(
   unit
 )
-"Permutation.ml" 115 4238 4240 "Permutation.ml" 115 4238 4252
+"Permutation.ml" 131 4528 4530 "Permutation.ml" 131 4528 4542
 type(
   (string -> occurence -> unit) -> (string, occurence) Hashtbl.t -> unit
 )
 ident(
   ext_ref Hashtbl.iter
 )
-"Permutation.ml" 115 4238 4253 "Permutation.ml" 115 4238 4264
+"Permutation.ml" 131 4528 4543 "Permutation.ml" 131 4528 4554
 type(
   string -> occurence -> unit
 )
 ident(
-  int_ref count_words "Permutation.ml" 114 4145 4150 "Permutation.ml" 114 4145 4161
+  int_ref count_words "Permutation.ml" 130 4435 4440 "Permutation.ml" 130 4435 4451
 )
-"Permutation.ml" 115 4238 4265 "Permutation.ml" 115 4238 4285
+"Permutation.ml" 131 4528 4555 "Permutation.ml" 131 4528 4575
 type(
   (string, occurence) Hashtbl.t
 )
 ident(
-  int_ref myMapWordToOccurence "Permutation.ml" 111 3942 3950 "Permutation.ml" 111 3942 3970
+  int_ref myMapWordToOccurence "Permutation.ml" 127 4232 4240 "Permutation.ml" 127 4232 4260
 )
-"Permutation.ml" 115 4238 4239 "Permutation.ml" 115 4238 4286
+"Permutation.ml" 131 4528 4529 "Permutation.ml" 131 4528 4576
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 116 4288 4290 "Permutation.ml" 116 4288 4302
+"Permutation.ml" 132 4578 4580 "Permutation.ml" 132 4578 4592
 type(
   string -> unit
 )
 ident(
   ext_ref Pervasives.print_string
 )
-"Permutation.ml" 116 4288 4303 "Permutation.ml" 116 4288 4331
+"Permutation.ml" 132 4578 4593 "Permutation.ml" 132 4578 4621
 type(
   string
 )
-"Permutation.ml" 116 4288 4289 "Permutation.ml" 116 4288 4332
+"Permutation.ml" 132 4578 4579 "Permutation.ml" 132 4578 4622
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 117 4334 4336 "Permutation.ml" 117 4334 4345
+"Permutation.ml" 133 4624 4626 "Permutation.ml" 133 4624 4635
 type(
   int -> unit
 )
 ident(
   ext_ref Pervasives.print_int
 )
-"Permutation.ml" 117 4334 4346 "Permutation.ml" 117 4334 4347
+"Permutation.ml" 133 4624 4636 "Permutation.ml" 133 4624 4637
 type(
   int ref -> int
 )
 ident(
   ext_ref Pervasives.( ! )
 )
-"Permutation.ml" 117 4334 4347 "Permutation.ml" 117 4334 4362
+"Permutation.ml" 133 4624 4637 "Permutation.ml" 133 4624 4652
 type(
   int ref
 )
 ident(
-  int_ref number_of_words "Permutation.ml" 113 4113 4118 "Permutation.ml" 113 4113 4133
+  int_ref number_of_words "Permutation.ml" 129 4403 4408 "Permutation.ml" 129 4403 4423
 )
-"Permutation.ml" 117 4334 4346 "Permutation.ml" 117 4334 4362
+"Permutation.ml" 133 4624 4636 "Permutation.ml" 133 4624 4652
 type(
   int
 )
-"Permutation.ml" 117 4334 4335 "Permutation.ml" 117 4334 4363
+"Permutation.ml" 133 4624 4625 "Permutation.ml" 133 4624 4653
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 118 4365 4367 "Permutation.ml" 118 4365 4379
+"Permutation.ml" 134 4655 4657 "Permutation.ml" 134 4655 4669
 type(
   string -> unit
 )
 ident(
   ext_ref Pervasives.print_string
 )
-"Permutation.ml" 118 4365 4380 "Permutation.ml" 118 4365 4384
+"Permutation.ml" 134 4655 4670 "Permutation.ml" 134 4655 4674
 type(
   string
 )
-"Permutation.ml" 118 4365 4366 "Permutation.ml" 118 4365 4385
+"Permutation.ml" 134 4655 4656 "Permutation.ml" 134 4655 4675
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 119 4387 4389 "Permutation.ml" 119 4387 4401
+"Permutation.ml" 135 4677 4679 "Permutation.ml" 135 4677 4691
 type(
   string -> unit
 )
 ident(
   ext_ref Pervasives.print_string
 )
-"Permutation.ml" 119 4387 4402 "Permutation.ml" 119 4387 4438
+"Permutation.ml" 135 4677 4692 "Permutation.ml" 135 4677 4728
 type(
   string
 )
-"Permutation.ml" 119 4387 4388 "Permutation.ml" 119 4387 4439
+"Permutation.ml" 135 4677 4678 "Permutation.ml" 135 4677 4729
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 120 4441 4443 "Permutation.ml" 120 4441 4455
+"Permutation.ml" 136 4731 4733 "Permutation.ml" 136 4731 4745
 type(
   string -> unit
 )
 ident(
   ext_ref Pervasives.print_string
 )
-"Permutation.ml" 120 4441 4456 "Permutation.ml" 120 4441 4460
+"Permutation.ml" 136 4731 4746 "Permutation.ml" 136 4731 4750
 type(
   string
 )
-"Permutation.ml" 120 4441 4442 "Permutation.ml" 120 4441 4461
+"Permutation.ml" 136 4731 4732 "Permutation.ml" 136 4731 4751
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 121 4463 4465 "Permutation.ml" 121 4463 4488
+"Permutation.ml" 137 4753 4755 "Permutation.ml" 137 4753 4778
 type(
   (string, occurence) Hashtbl.t -> unit
 )
 ident(
-  int_ref print_word_to_occurence "Permutation.ml" 90 3171 3183 "Permutation.ml" 90 3171 3206
+  int_ref print_word_to_occurence "Permutation.ml" 106 3461 3473 "Permutation.ml" 106 3461 3496
 )
-"Permutation.ml" 121 4463 4489 "Permutation.ml" 121 4463 4509
+"Permutation.ml" 137 4753 4779 "Permutation.ml" 137 4753 4799
 type(
   (string, occurence) Hashtbl.t
 )
 ident(
-  int_ref myMapWordToOccurence "Permutation.ml" 111 3942 3950 "Permutation.ml" 111 3942 3970
+  int_ref myMapWordToOccurence "Permutation.ml" 127 4232 4240 "Permutation.ml" 127 4232 4260
 )
-"Permutation.ml" 121 4463 4464 "Permutation.ml" 121 4463 4510
+"Permutation.ml" 137 4753 4754 "Permutation.ml" 137 4753 4800
 call(
   stack
 )
 type(
   unit
 )
-"Permutation.ml" 122 4512 4514 "Permutation.ml" 122 4512 4537
+"Permutation.ml" 138 4802 4804 "Permutation.ml" 138 4802 4827
 type(
   string list IntMap.t -> string list IntMap.t
 )
 ident(
-  int_ref print_occurence_to_word "Permutation.ml" 100 3514 3523 "Permutation.ml" 100 3514 3546
+  int_ref print_occurence_to_word "Permutation.ml" 116 3804 3813 "Permutation.ml" 116 3804 3836
 )
-"Permutation.ml" 122 4512 4538 "Permutation.ml" 122 4512 4558
+"Permutation.ml" 138 4802 4828 "Permutation.ml" 138 4802 4848
 type(
   string list IntMap.t
 )
 ident(
-  int_ref myMapOccurenceToWord "Permutation.ml" 112 4032 4037 "Permutation.ml" 112 4032 4057
+  int_ref myMapOccurenceToWord "Permutation.ml" 128 4322 4327 "Permutation.ml" 128 4322 4347
 )
-"Permutation.ml" 122 4512 4513 "Permutation.ml" 122 4512 4559
+"Permutation.ml" 138 4802 4803 "Permutation.ml" 138 4802 4849
 call(
   stack
 )
 type(
   string list IntMap.t
 )
-"Permutation.ml" 121 4463 4464 "Permutation.ml" 122 4512 4559
+"Permutation.ml" 137 4753 4754 "Permutation.ml" 138 4802 4849
 type(
   string list IntMap.t
 )
-"Permutation.ml" 120 4441 4442 "Permutation.ml" 122 4512 4559
+"Permutation.ml" 136 4731 4732 "Permutation.ml" 138 4802 4849
 type(
   string list IntMap.t
 )
-"Permutation.ml" 119 4387 4388 "Permutation.ml" 122 4512 4559
+"Permutation.ml" 135 4677 4678 "Permutation.ml" 138 4802 4849
 type(
   string list IntMap.t
 )
-"Permutation.ml" 118 4365 4366 "Permutation.ml" 122 4512 4559
+"Permutation.ml" 134 4655 4656 "Permutation.ml" 138 4802 4849
 type(
   string list IntMap.t
 )
-"Permutation.ml" 117 4334 4335 "Permutation.ml" 122 4512 4559
+"Permutation.ml" 133 4624 4625 "Permutation.ml" 138 4802 4849
 type(
   string list IntMap.t
 )
-"Permutation.ml" 116 4288 4289 "Permutation.ml" 122 4512 4559
+"Permutation.ml" 132 4578 4579 "Permutation.ml" 138 4802 4849
 type(
   string list IntMap.t
 )
-"Permutation.ml" 115 4238 4239 "Permutation.ml" 122 4512 4559
+"Permutation.ml" 131 4528 4529 "Permutation.ml" 138 4802 4849
 type(
   string list IntMap.t
 )
-"Permutation.ml" 114 4145 4146 "Permutation.ml" 122 4512 4559
+"Permutation.ml" 130 4435 4436 "Permutation.ml" 138 4802 4849
 type(
   string list IntMap.t
 )
-"Permutation.ml" 113 4113 4114 "Permutation.ml" 122 4512 4559
+"Permutation.ml" 129 4403 4404 "Permutation.ml" 138 4802 4849
 type(
   string list IntMap.t
 )
-"Permutation.ml" 112 4032 4033 "Permutation.ml" 122 4512 4559
+"Permutation.ml" 128 4322 4323 "Permutation.ml" 138 4802 4849
 type(
   string list IntMap.t
 )
-"Permutation.ml" 111 3942 3946 "Permutation.ml" 122 4512 4559
+"Permutation.ml" 127 4232 4236 "Permutation.ml" 138 4802 4849
 type(
   string list IntMap.t
 )

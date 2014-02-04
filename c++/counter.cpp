@@ -60,7 +60,7 @@ public:
     {
         m_lock.lock();
         int temp = m_value;
-        sleep(0);
+	//	sleep(0);
         m_value = temp + 1;
         m_lock.unlock();
         return temp;
@@ -285,6 +285,79 @@ void FileParser::ReadAndParseTheFile(void)
     
 }
 
+
+template <class T>
+class SortedArray {
+private:
+
+public:
+  static const int m_sizeofTheArray = 4000;
+  SortedArray(void);
+  T m_array[m_sizeofTheArray];
+  int partition(int left, int right, int pivoIndex);
+  void qsort(int left, int right);
+  virtual int comp(T x, T y) { return (x<y); }
+  void swap(int x, int y) { T v = m_array[x]; m_array[x]=m_array[y];m_array[y]=v;}
+  void printArray(void);
+};
+
+template <class T>
+SortedArray<T>::SortedArray(void)
+{
+  srand(time(NULL));
+  for(int i=0;i<m_sizeofTheArray;i++)
+    m_array[i] = rand() % (m_sizeofTheArray);
+    
+}
+
+template <class T>
+void SortedArray<T>::printArray(void)
+{
+  int i;
+  std::cout << "this is the array\n";
+  for(i=0;i< m_sizeofTheArray;i++)
+  {
+    std::cout << m_array[i] << ",";
+  }
+  std::cout << "\n";
+}
+
+template<class T>
+void SortedArray<T>::qsort(int left, int right)
+{
+  if (left >= right)
+    return;
+  std::cout << "qsort:\n";
+  int pivotIndex = (left+right)/2;
+  std::cout << "left:" << left << " right:" << right << " pivotIndex:" << pivotIndex << "\n";
+  int pivotNewIndex = partition(left, right, pivotIndex);
+  qsort(left, pivotNewIndex-1);
+  qsort(pivotNewIndex+1, right);
+
+}
+
+template <class T>
+int SortedArray<T>::partition(int left, int right, int pivotIndex)
+{
+  std::cout << "partition: left:" << left << " right:" << right << " pivot:" << pivotIndex << "\n";
+  int pivotValue = m_array[pivotIndex];
+
+  swap(pivotIndex,right);
+  int storeIndex = left;
+
+  for(int i=left;i<right;i++)
+  {
+    if (comp(m_array[i], pivotValue))
+    {
+      swap(i, storeIndex);
+      storeIndex = storeIndex + 1;
+    }
+  }
+
+  swap(storeIndex, right);
+  return storeIndex;
+};
+
 class Manager {
 public:
 
@@ -321,6 +394,11 @@ int main()
     
     Manager myManager("toto.txt");
     myManager.GetTaskDefinition();
+    SortedArray<int>  my_array;
+    
+    my_array.printArray();
+    my_array.qsort(0, SortedArray<int>::m_sizeofTheArray-1);
+    my_array.printArray();
     
     return 0;
 }
