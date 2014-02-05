@@ -64,7 +64,7 @@ void SortedArray<T>::qsort(int left, int right)
    - all values smaller than the pivot value are on the left of the pivot
    - all values greater than the pivot value are on the right of the pivot
    - storeIndex is the new position of the pivot value
-   -
+   - 
 */
 
 template <class T>
