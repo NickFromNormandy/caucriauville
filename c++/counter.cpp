@@ -60,7 +60,10 @@ int main()
     Manager myManager("toto.txt");
     myManager.GetTaskDefinition();
     SortedArray<int>  my_array;
-    
+    my_array.m_array[0]=34;
+    my_array.m_array[1]=0;
+    my_array.m_array[2]=8;
+    my_array.m_array[3]=1;
     my_array.printArray();
     my_array.qsort(0, SortedArray<int>::m_sizeofTheArray-1);
     my_array.printArray();
