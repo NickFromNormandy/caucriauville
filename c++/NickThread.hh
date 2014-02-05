@@ -1,4 +1,9 @@
 
+#ifndef __NICKTHREAD__
+#define __NICKTHREAD__
+
+#include "Counter.hh"
+
 class NickThread 
 {
 
@@ -28,8 +33,6 @@ private:
 
 };
 
-
-
 void *NickThread::execute(void *myInput) 
 { 
     NickThread *mythis = (NickThread*)myInput;   
@@ -37,3 +40,4 @@ void *NickThread::execute(void *myInput)
     pthread_exit(&(mythis->m_thread_number));
 };
 
+#endif

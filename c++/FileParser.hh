@@ -1,4 +1,9 @@
+
+#ifndef __FILEPARSER__
+#define __FILEPARSER__
+
 #include "NickThread.hh"
+#include "Counter.hh"
 
 class FileParser : public NickThread
 {
@@ -160,3 +165,4 @@ void FileParser::ReadAndParseTheFile(void)
     
 }
 
+#endif

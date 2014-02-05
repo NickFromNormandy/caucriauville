@@ -1,3 +1,8 @@
+
+
+#ifndef __NICKCOUNTER__
+#define __NICKCOUNTER__
+
 #include "Lock.hh"
 
 class Counter 
@@ -31,3 +36,5 @@ private:
     int  m_value;
 
 };
+
+#endif
