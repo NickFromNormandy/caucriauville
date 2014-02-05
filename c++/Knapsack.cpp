@@ -59,7 +59,7 @@ void BackPack::ComputeOneCase(unsigned int members, int& weight, int& value)
       weight = weight + m_items.operator[](i).getWeight();
       value = value + m_items[i].getValue();
       
-      m_items.operator[](i).print();
+     
     }
   }
 }
@@ -75,10 +75,10 @@ void BackPack::ComputeBestBag()
   {
     int weight=0, value=0;
     ComputeOneCase(i, weight, value);
-    std::cout << "\tFor once case: Choices:" << i << "weight:" << weight << "value:" << value << "\n";
+   
     if (weight <= m_weight && value > m_value)
     {
-      //std::cout << "Choices:" << i << "weight:" << weight << "value:" << value << "\n";
+  
       m_value = value;
       m_case = i;
     }
@@ -116,6 +116,15 @@ main()
   myVector.push_back(Item("Blue", 2, 2));
   myVector.push_back(Item("Yellow", 4, 10));
   myVector.push_back(Item("Green", 12, 2));
+  myVector.push_back( Item("Gray", 1, 2));
+  myVector.push_back(Item("Orange", 1, 1));
+  myVector.push_back(Item("Blue", 2, 2));
+  myVector.push_back(Item("Yellow", 4, 10));
+  myVector.push_back(Item("Green", 12, 2));
+  myVector.push_back( Item("Gray", 1, 2));
+  myVector.push_back(Item("Orange", 1, 1));
+  myVector.push_back(Item("Blue", 2, 2));
+  myVector.push_back(Item("Yellow", 4, 10));
   BackPack myBackPack(15, myVector);
   myBackPack.ComputeBestBag();  
   myBackPack.PrintChoice();
