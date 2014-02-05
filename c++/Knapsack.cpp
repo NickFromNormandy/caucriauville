@@ -5,6 +5,7 @@
 #include <fstream>
 #include <string.h>
 #include <unordered_map>
+#include <algorithm>
 
 class Item
 {
@@ -35,6 +36,7 @@ class BackPack
 {
 public:
   BackPack(int weight, SetOfItems &myItems) : m_weight(weight),  m_items(myItems), m_value(0) {};
+  void ComputeBestBagBruteForce();
   void ComputeBestBag();
   void PrintChoice();
 private:
@@ -42,6 +44,7 @@ private:
   int          m_weight;
   int          m_value;
   int          m_case;
+  int          m_matrix[100][100];
   SetOfItems&  m_items;
 };
 
@@ -59,12 +62,39 @@ void BackPack::ComputeOneCase(unsigned int members, int& weight, int& value)
       weight = weight + m_items.operator[](i).getWeight();
       value = value + m_items[i].getValue();
       
-     
     }
   }
 }
 
 void BackPack::ComputeBestBag()
+{
+  for(int j=0;j<=m_weight;j++)
+    m_matrix[0][j]=0;
+
+  int n = m_items.size();
+  
+  for(int i=1;i<=n;i++)
+  {
+    for(int j=0;j<=m_weight;j++)
+    {
+      if (m_items[i].getWeight() <= j)
+      {
+	int v1=  m_matrix[i-1][j];
+	int v2=  m_matrix[i-1][j-m_items[i-1].getWeight()];
+	m_matrix[i][j] = std::max(v1,v2)+m_items[i-1].getValue();
+      }
+      else
+      {
+	m_matrix[i][j] = m_matrix[i-1][j];
+      }
+    }
+  }
+
+  std::cout << "Polynormal:" << m_matrix[n][m_weight];
+			
+}
+
+void BackPack::ComputeBestBagBruteForce()
 {
   int NumberOfItems = m_items.size();
   int choices = (1 << NumberOfItems);
@@ -77,8 +107,7 @@ void BackPack::ComputeBestBag()
     ComputeOneCase(i, weight, value);
    
     if (weight <= m_weight && value > m_value)
-    {
-  
+    {  
       m_value = value;
       m_case = i;
     }
@@ -116,17 +145,13 @@ main()
   myVector.push_back(Item("Blue", 2, 2));
   myVector.push_back(Item("Yellow", 4, 10));
   myVector.push_back(Item("Green", 12, 2));
-  myVector.push_back( Item("Gray", 1, 2));
-  myVector.push_back(Item("Orange", 1, 1));
-  myVector.push_back(Item("Blue", 2, 2));
-  myVector.push_back(Item("Yellow", 4, 10));
-  myVector.push_back(Item("Green", 12, 2));
-  myVector.push_back( Item("Gray", 1, 2));
-  myVector.push_back(Item("Orange", 1, 1));
-  myVector.push_back(Item("Blue", 2, 2));
-  myVector.push_back(Item("Yellow", 4, 10));
   BackPack myBackPack(15, myVector);
+
+  std::cout << "Polynomial case------------------------------------------\n";
   myBackPack.ComputeBestBag();  
   myBackPack.PrintChoice();
-  myVector.print();
+  std::cout << "Brute force case------------------------------------------\n";
+  myBackPack.ComputeBestBagBruteForce();  
+  myBackPack.PrintChoice();
+  // myVector.print();
 }
