@@ -3,7 +3,7 @@ class SortedArray {
 private:
 
 public:
-  static const int m_sizeofTheArray = 4;
+  static const int m_sizeofTheArray = 5;
   SortedArray(void);
   T m_array[m_sizeofTheArray];
   int partition(int left, int right, int pivoIndex);
@@ -38,19 +38,35 @@ void SortedArray<T>::qsort(int left, int right)
 {
   if (left >= right)
     return;
+  std::cout << "### begin qsor" << left << "," << right <<" \n";
   int pivotIndex = (left+right)/2;
   int pivotNewIndex = partition(left, right, pivotIndex);
   qsort(left, pivotNewIndex-1);
   qsort(pivotNewIndex+1, right);
-
+  std::cout << "### end qsor" << left << "," << right <<" \n";
 }
+
+/**
+
+   Precondition:
+   =============
+
+   - For a given subsequence denoted by the index left and right.
+
+   Postcondition:
+   =============
+
+   - the pivot has been moved to the rightest possible position
+   - all values beetween the subsequence denoted by left and further right are smaller than the pivot
+
+*/
 
 template <class T>
 int SortedArray<T>::partition(int left, int right, int pivotIndex)
 {
 
   int pivotValue = m_array[pivotIndex];
-
+  std::cout << "======================== begin Partition" << left << "," << right << "\n";
   swap(pivotIndex,right);
   int storeIndex = left;
   std::cout << "left:" << left << " right:" << right << " pivotIndex:" << pivotIndex << " pivotValue:" << pivotValue << "\n";
@@ -67,6 +83,7 @@ int SortedArray<T>::partition(int left, int right, int pivotIndex)
   }
   
   swap(storeIndex, right);
+  std::cout << "======================== end Partition" << left << "," << right << "\n";
   return storeIndex;
 
 };

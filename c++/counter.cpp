@@ -64,6 +64,7 @@ int main()
     my_array.m_array[1]=0;
     my_array.m_array[2]=8;
     my_array.m_array[3]=1;
+    my_array.m_array[4]=-1;
     my_array.printArray();
     my_array.qsort(0, SortedArray<int>::m_sizeofTheArray-1);
     my_array.printArray();
