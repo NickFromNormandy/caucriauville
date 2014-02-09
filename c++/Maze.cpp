@@ -15,6 +15,7 @@ private:
 
   int m_matrix[100][100];
   bool m_marked[100];
+
 public:
 
   Maze(); 
@@ -41,24 +42,28 @@ Maze::Maze()
 bool Maze::find(int source, int final)
 {
   m_marked[source]=true;
-  if (source == final) 
-    {
-      std::cout << "step:" << source << "\n";
-      std::cout << "we got it!\n";
-      return true;
-    }
-  else
-    {
-      for(int i =0;i<100;i++)
-	{
-	  if (m_matrix[source][i]!=0 && m_marked[i]==false && find(i,final)==true)
-	    std::cout << "step:" << source << "\n";
-	    return true;
-	}
 
-      
-      return false;
+  if (source == final) 
+  {
+    std::cout << "step:" << (char)(source+'A') << "\n";
+    std::cout << "we got it!\n";
+    return true;
+  }
+  else
+  {
+
+    for(int i=0;i<100;i++)
+    {
+      if (m_matrix[source][i]!=0 && m_marked[i]==false && find(i,final)==true)
+      {
+	std::cout << "step:" << (char)(source+'A') << "\n";
+	return true;
+      }
     }
+    
+    return false;
+  }
+
 }
 
 void Maze::print(void)
@@ -70,28 +75,33 @@ int main()
 {
   
   Maze myMaze;
-  // A
+  // A =0
   myMaze.set(0,1,1);
   myMaze.set(0,3,1);
 
-  // B
+  // B = 1
   myMaze.set(1,0,1);
   myMaze.set(1,2,1);
 
-  // C
+  // C =2 
   myMaze.set(2,0,1);
   myMaze.set(2,5,1);
 
-  // D
+  // D = 3
   myMaze.set(3,0,1);
   myMaze.set(3,4,1);
+  myMaze.set(3,6,1);
 
-  //E
+  //E=4
   myMaze.set(4,3,1);
   
-  //F
+  //F=5
   myMaze.set(5,2,1);
   
+  //G=6
+  myMaze.set(6, 7, 1);
+
+
   if (myMaze.find(0,5))
     {
       std::cout << "We got it\n";
