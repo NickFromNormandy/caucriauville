@@ -1,0 +1,831 @@
+"Steps.ml" 9 100 104 "Steps.ml" 9 100 126
+type(
+  int -> (int * int * int) list
+)
+ident(
+  def findCombinaisonOfSteps "Steps.ml" 25 398 398 --
+)
+"Steps.ml" 9 100 127 "Steps.ml" 9 100 128
+type(
+  int
+)
+ident(
+  def n "Steps.ml" 10 131 133 "Steps.ml" 22 375 393
+)
+"Steps.ml" 10 131 137 "Steps.ml" 10 131 152
+type(
+  (int * int * int) list ref
+)
+"Steps.ml" 10 131 155 "Steps.ml" 10 131 158
+type(
+  (int * int * int) list -> (int * int * int) list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"Steps.ml" 10 131 159 "Steps.ml" 10 131 161
+type(
+  (int * int * int) list
+)
+"Steps.ml" 10 131 155 "Steps.ml" 10 131 161
+type(
+  (int * int * int) list ref
+)
+"Steps.ml" 11 165 171 "Steps.ml" 11 165 185
+type(
+  int -> (int * int * int) list
+)
+"Steps.ml" 11 165 186 "Steps.ml" 11 165 187
+type(
+  int
+)
+ident(
+  def n "Steps.ml" 12 190 194 "Steps.ml" 20 349 369
+)
+"Steps.ml" 12 190 202 "Steps.ml" 12 190 203
+type(
+  int
+)
+"Steps.ml" 12 190 207 "Steps.ml" 12 190 208
+type(
+  int
+)
+ident(
+  int_ref n "Steps.ml" 11 165 186 "Steps.ml" 11 165 187
+)
+"Steps.ml" 13 212 226 "Steps.ml" 13 212 227
+type(
+  int
+)
+"Steps.ml" 13 212 231 "Steps.ml" 13 212 232
+type(
+  int
+)
+ident(
+  int_ref n "Steps.ml" 11 165 186 "Steps.ml" 11 165 187
+)
+"Steps.ml" 14 236 242 "Steps.ml" 14 236 243
+type(
+  int
+)
+ident(
+  def x "Steps.ml" 16 261 262 "Steps.ml" 17 278 324
+)
+"Steps.ml" 14 236 246 "Steps.ml" 14 236 247
+type(
+  int
+)
+ident(
+  int_ref n "Steps.ml" 11 165 186 "Steps.ml" 11 165 187
+)
+"Steps.ml" 14 236 247 "Steps.ml" 14 236 248
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Steps.ml" 14 236 248 "Steps.ml" 14 236 249
+type(
+  int
+)
+"Steps.ml" 14 236 249 "Steps.ml" 14 236 250
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Steps.ml" 14 236 250 "Steps.ml" 14 236 251
+type(
+  int
+)
+"Steps.ml" 14 236 248 "Steps.ml" 14 236 251
+type(
+  int
+)
+"Steps.ml" 14 236 246 "Steps.ml" 14 236 251
+type(
+  int
+)
+"Steps.ml" 14 236 251 "Steps.ml" 14 236 252
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Steps.ml" 14 236 252 "Steps.ml" 14 236 253
+type(
+  int
+)
+"Steps.ml" 14 236 253 "Steps.ml" 14 236 254
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"Steps.ml" 14 236 254 "Steps.ml" 14 236 255
+type(
+  int
+)
+"Steps.ml" 14 236 252 "Steps.ml" 14 236 255
+type(
+  int
+)
+"Steps.ml" 14 236 246 "Steps.ml" 14 236 255
+type(
+  int
+)
+"Steps.ml" 16 261 267 "Steps.ml" 16 261 268
+type(
+  int
+)
+ident(
+  int_ref x "Steps.ml" 14 236 242 "Steps.ml" 14 236 243
+)
+"Steps.ml" 16 261 268 "Steps.ml" 16 261 270
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"Steps.ml" 16 261 270 "Steps.ml" 16 261 271
+type(
+  int
+)
+"Steps.ml" 16 261 266 "Steps.ml" 16 261 272
+type(
+  bool
+)
+"Steps.ml" 17 278 279 "Steps.ml" 17 278 294
+type(
+  (int * int * int) list ref
+)
+ident(
+  int_ref mySetOfTriplets "Steps.ml" 10 131 137 "Steps.ml" 10 131 152
+)
+"Steps.ml" 17 278 295 "Steps.ml" 17 278 297
+type(
+  (int * int * int) list ref -> (int * int * int) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"Steps.ml" 17 278 299 "Steps.ml" 17 278 300
+type(
+  int
+)
+ident(
+  int_ref x "Steps.ml" 14 236 242 "Steps.ml" 14 236 243
+)
+"Steps.ml" 17 278 301 "Steps.ml" 17 278 302
+type(
+  int
+)
+"Steps.ml" 17 278 303 "Steps.ml" 17 278 304
+type(
+  int
+)
+"Steps.ml" 17 278 298 "Steps.ml" 17 278 305
+type(
+  int * int * int
+)
+"Steps.ml" 17 278 307 "Steps.ml" 17 278 308
+type(
+  (int * int * int) list ref -> (int * int * int) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Steps.ml" 17 278 308 "Steps.ml" 17 278 323
+type(
+  (int * int * int) list ref
+)
+ident(
+  int_ref mySetOfTriplets "Steps.ml" 10 131 137 "Steps.ml" 10 131 152
+)
+"Steps.ml" 17 278 307 "Steps.ml" 17 278 323
+type(
+  (int * int * int) list
+)
+"Steps.ml" 17 278 298 "Steps.ml" 17 278 323
+type(
+  (int * int * int) list
+)
+"Steps.ml" 17 278 279 "Steps.ml" 17 278 323
+type(
+  unit
+)
+"Steps.ml" 16 261 262 "Steps.ml" 17 278 324
+type(
+  unit
+)
+"Steps.ml" 14 236 237 "Steps.ml" 17 278 326
+type(
+  unit
+)
+"Steps.ml" 13 212 218 "Steps.ml" 18 327 338
+type(
+  unit
+)
+"Steps.ml" 12 190 194 "Steps.ml" 19 339 347
+type(
+  unit
+)
+"Steps.ml" 20 349 353 "Steps.ml" 20 349 354
+type(
+  (int * int * int) list ref -> (int * int * int) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"Steps.ml" 20 349 354 "Steps.ml" 20 349 369
+type(
+  (int * int * int) list ref
+)
+ident(
+  int_ref mySetOfTriplets "Steps.ml" 10 131 137 "Steps.ml" 10 131 152
+)
+"Steps.ml" 20 349 353 "Steps.ml" 20 349 369
+type(
+  (int * int * int) list
+)
+"Steps.ml" 12 190 194 "Steps.ml" 20 349 369
+type(
+  (int * int * int) list
+)
+"Steps.ml" 22 375 377 "Steps.ml" 22 375 391
+type(
+  int -> (int * int * int) list
+)
+ident(
+  int_ref iterateOnSteps "Steps.ml" 11 165 171 "Steps.ml" 11 165 185
+)
+"Steps.ml" 22 375 392 "Steps.ml" 22 375 393
+type(
+  int
+)
+ident(
+  int_ref n "Steps.ml" 9 100 127 "Steps.ml" 9 100 128
+)
+"Steps.ml" 22 375 377 "Steps.ml" 22 375 393
+call(
+  tail
+)
+type(
+  (int * int * int) list
+)
+"Steps.ml" 11 165 167 "Steps.ml" 22 375 393
+type(
+  (int * int * int) list
+)
+"Steps.ml" 10 131 133 "Steps.ml" 22 375 393
+type(
+  (int * int * int) list
+)
+"Steps.ml" 25 398 402 "Steps.ml" 25 398 426
+type(
+  'a -> int -> 'a list
+)
+ident(
+  def generateAsequenceFullOfx "Steps.ml" 34 597 597 --
+)
+"Steps.ml" 25 398 427 "Steps.ml" 25 398 428
+type(
+  'a
+)
+ident(
+  def x "Steps.ml" 25 398 429 "Steps.ml" 31 565 586
+)
+"Steps.ml" 25 398 429 "Steps.ml" 25 398 438
+type(
+  int
+)
+ident(
+  def thelength "Steps.ml" 26 441 443 "Steps.ml" 31 565 586
+)
+"Steps.ml" 26 441 451 "Steps.ml" 26 441 457
+type(
+  'a list -> int -> 'a list
+)
+"Steps.ml" 26 441 458 "Steps.ml" 26 441 464
+type(
+  'a list
+)
+ident(
+  def mylist "Steps.ml" 26 441 465 "Steps.ml" 30 524 561
+)
+"Steps.ml" 26 441 465 "Steps.ml" 26 441 473
+type(
+  int
+)
+ident(
+  def mylength "Steps.ml" 27 476 480 "Steps.ml" 30 524 561
+)
+"Steps.ml" 27 476 483 "Steps.ml" 27 476 491
+type(
+  int
+)
+ident(
+  int_ref mylength "Steps.ml" 26 441 465 "Steps.ml" 26 441 473
+)
+"Steps.ml" 27 476 492 "Steps.ml" 27 476 494
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( == )
+)
+"Steps.ml" 27 476 495 "Steps.ml" 27 476 496
+type(
+  int
+)
+"Steps.ml" 27 476 483 "Steps.ml" 27 476 496
+type(
+  bool
+)
+"Steps.ml" 28 502 508 "Steps.ml" 28 502 514
+type(
+  'a list
+)
+ident(
+  int_ref mylist "Steps.ml" 26 441 458 "Steps.ml" 26 441 464
+)
+"Steps.ml" 30 524 530 "Steps.ml" 30 524 536
+type(
+  'a list -> int -> 'a list
+)
+ident(
+  int_ref myIter "Steps.ml" 26 441 451 "Steps.ml" 26 441 457
+)
+"Steps.ml" 30 524 538 "Steps.ml" 30 524 539
+type(
+  'a
+)
+ident(
+  int_ref x "Steps.ml" 25 398 427 "Steps.ml" 25 398 428
+)
+"Steps.ml" 30 524 541 "Steps.ml" 30 524 547
+type(
+  'a list
+)
+ident(
+  int_ref mylist "Steps.ml" 26 441 458 "Steps.ml" 26 441 464
+)
+"Steps.ml" 30 524 537 "Steps.ml" 30 524 548
+type(
+  'a list
+)
+"Steps.ml" 30 524 550 "Steps.ml" 30 524 558
+type(
+  int
+)
+ident(
+  int_ref mylength "Steps.ml" 26 441 465 "Steps.ml" 26 441 473
+)
+"Steps.ml" 30 524 558 "Steps.ml" 30 524 559
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"Steps.ml" 30 524 559 "Steps.ml" 30 524 560
+type(
+  int
+)
+"Steps.ml" 30 524 549 "Steps.ml" 30 524 561
+type(
+  int
+)
+"Steps.ml" 30 524 530 "Steps.ml" 30 524 561
+call(
+  tail
+)
+type(
+  'a list
+)
+"Steps.ml" 27 476 480 "Steps.ml" 30 524 561
+type(
+  'a list
+)
+"Steps.ml" 31 565 567 "Steps.ml" 31 565 573
+type(
+  'a list -> int -> 'a list
+)
+ident(
+  int_ref myIter "Steps.ml" 26 441 451 "Steps.ml" 26 441 457
+)
+"Steps.ml" 31 565 574 "Steps.ml" 31 565 576
+type(
+  'a list
+)
+"Steps.ml" 31 565 577 "Steps.ml" 31 565 586
+type(
+  int
+)
+ident(
+  int_ref thelength "Steps.ml" 25 398 429 "Steps.ml" 25 398 438
+)
+"Steps.ml" 31 565 567 "Steps.ml" 31 565 586
+call(
+  tail
+)
+type(
+  'a list
+)
+"Steps.ml" 26 441 443 "Steps.ml" 31 565 586
+type(
+  'a list
+)
+"Steps.ml" 34 597 601 "Steps.ml" 34 597 614
+type(
+  int * int * int -> unit
+)
+ident(
+  def print_triplet "Steps.ml" 44 810 810 --
+)
+"Steps.ml" 34 597 615 "Steps.ml" 34 597 624
+type(
+  int * int * int
+)
+ident(
+  def myTriplet "Steps.ml" 35 627 627 "Steps.ml" 42 784 806
+)
+"Steps.ml" 35 627 633 "Steps.ml" 35 627 642
+type(
+  int * int * int
+)
+ident(
+  int_ref myTriplet "Steps.ml" 34 597 615 "Steps.ml" 34 597 624
+)
+"Steps.ml" 36 648 651 "Steps.ml" 36 648 652
+type(
+  int
+)
+ident(
+  def x "Steps.ml" 36 648 661 "Steps.ml" 42 784 806
+)
+"Steps.ml" 36 648 653 "Steps.ml" 36 648 654
+type(
+  int
+)
+ident(
+  def y "Steps.ml" 36 648 661 "Steps.ml" 42 784 806
+)
+"Steps.ml" 36 648 655 "Steps.ml" 36 648 656
+type(
+  int
+)
+ident(
+  def z "Steps.ml" 36 648 661 "Steps.ml" 42 784 806
+)
+"Steps.ml" 36 648 650 "Steps.ml" 36 648 657
+type(
+  int * int * int
+)
+"Steps.ml" 36 648 661 "Steps.ml" 36 648 673
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"Steps.ml" 36 648 674 "Steps.ml" 36 648 677
+type(
+  string
+)
+"Steps.ml" 36 648 661 "Steps.ml" 36 648 677
+call(
+  stack
+)
+type(
+  unit
+)
+"Steps.ml" 37 679 685 "Steps.ml" 37 679 694
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.print_int
+)
+"Steps.ml" 37 679 695 "Steps.ml" 37 679 696
+type(
+  int
+)
+ident(
+  int_ref x "Steps.ml" 36 648 651 "Steps.ml" 36 648 652
+)
+"Steps.ml" 37 679 685 "Steps.ml" 37 679 696
+call(
+  stack
+)
+type(
+  unit
+)
+"Steps.ml" 38 698 704 "Steps.ml" 38 698 716
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"Steps.ml" 38 698 717 "Steps.ml" 38 698 720
+type(
+  string
+)
+"Steps.ml" 38 698 704 "Steps.ml" 38 698 720
+call(
+  stack
+)
+type(
+  unit
+)
+"Steps.ml" 39 722 728 "Steps.ml" 39 722 737
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.print_int
+)
+"Steps.ml" 39 722 738 "Steps.ml" 39 722 739
+type(
+  int
+)
+ident(
+  int_ref y "Steps.ml" 36 648 653 "Steps.ml" 36 648 654
+)
+"Steps.ml" 39 722 728 "Steps.ml" 39 722 739
+call(
+  stack
+)
+type(
+  unit
+)
+"Steps.ml" 40 741 747 "Steps.ml" 40 741 759
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"Steps.ml" 40 741 760 "Steps.ml" 40 741 763
+type(
+  string
+)
+"Steps.ml" 40 741 747 "Steps.ml" 40 741 763
+call(
+  stack
+)
+type(
+  unit
+)
+"Steps.ml" 41 765 771 "Steps.ml" 41 765 780
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.print_int
+)
+"Steps.ml" 41 765 781 "Steps.ml" 41 765 782
+type(
+  int
+)
+ident(
+  int_ref z "Steps.ml" 36 648 655 "Steps.ml" 36 648 656
+)
+"Steps.ml" 41 765 771 "Steps.ml" 41 765 782
+call(
+  stack
+)
+type(
+  unit
+)
+"Steps.ml" 42 784 790 "Steps.ml" 42 784 802
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"Steps.ml" 42 784 803 "Steps.ml" 42 784 806
+type(
+  string
+)
+"Steps.ml" 42 784 790 "Steps.ml" 42 784 806
+call(
+  tail
+)
+type(
+  unit
+)
+"Steps.ml" 41 765 771 "Steps.ml" 42 784 806
+type(
+  unit
+)
+"Steps.ml" 40 741 747 "Steps.ml" 42 784 806
+type(
+  unit
+)
+"Steps.ml" 39 722 728 "Steps.ml" 42 784 806
+type(
+  unit
+)
+"Steps.ml" 38 698 704 "Steps.ml" 42 784 806
+type(
+  unit
+)
+"Steps.ml" 37 679 685 "Steps.ml" 42 784 806
+type(
+  unit
+)
+"Steps.ml" 36 648 661 "Steps.ml" 42 784 806
+type(
+  unit
+)
+"Steps.ml" 35 627 627 "Steps.ml" 42 784 806
+type(
+  unit
+)
+"Steps.ml" 44 810 814 "Steps.ml" 44 810 824
+type(
+  (int * int * int) list
+)
+ident(
+  def theResults "Steps.ml" 46 855 855 --
+)
+"Steps.ml" 44 810 827 "Steps.ml" 44 810 849
+type(
+  int -> (int * int * int) list
+)
+ident(
+  int_ref findCombinaisonOfSteps "Steps.ml" 9 100 104 "Steps.ml" 9 100 126
+)
+"Steps.ml" 44 810 850 "Steps.ml" 44 810 851
+type(
+  int
+)
+"Steps.ml" 44 810 827 "Steps.ml" 44 810 851
+call(
+  stack
+)
+type(
+  (int * int * int) list
+)
+"Steps.ml" 46 855 863 "Steps.ml" 46 855 876
+type(
+  (int * int * int) list -> unit
+)
+ident(
+  def printMyResult "Steps.ml" 46 855 855 --
+)
+"Steps.ml" 46 855 877 "Steps.ml" 46 855 886
+type(
+  (int * int * int) list
+)
+ident(
+  def myResults "Steps.ml" 47 889 891 "Steps.ml" 49 942 1014
+)
+"Steps.ml" 47 889 897 "Steps.ml" 47 889 906
+type(
+  (int * int * int) list
+)
+ident(
+  int_ref myResults "Steps.ml" 46 855 877 "Steps.ml" 46 855 886
+)
+"Steps.ml" 48 912 916 "Steps.ml" 48 912 918
+type(
+  (int * int * int) list
+)
+"Steps.ml" 48 912 922 "Steps.ml" 48 912 934
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"Steps.ml" 48 912 935 "Steps.ml" 48 912 941
+type(
+  string
+)
+"Steps.ml" 48 912 922 "Steps.ml" 48 912 941
+call(
+  tail
+)
+type(
+  unit
+)
+"Steps.ml" 49 942 946 "Steps.ml" 49 942 950
+type(
+  int * int * int
+)
+ident(
+  def head "Steps.ml" 49 942 960 "Steps.ml" 49 942 1014
+)
+"Steps.ml" 49 942 952 "Steps.ml" 49 942 956
+type(
+  (int * int * int) list
+)
+ident(
+  def tail "Steps.ml" 49 942 960 "Steps.ml" 49 942 1014
+)
+"Steps.ml" 49 942 946 "Steps.ml" 49 942 956
+type(
+  (int * int * int) list
+)
+"Steps.ml" 49 942 960 "Steps.ml" 49 942 973
+type(
+  int * int * int -> unit
+)
+ident(
+  int_ref print_triplet "Steps.ml" 34 597 601 "Steps.ml" 34 597 614
+)
+"Steps.ml" 49 942 974 "Steps.ml" 49 942 978
+type(
+  int * int * int
+)
+ident(
+  int_ref head "Steps.ml" 49 942 946 "Steps.ml" 49 942 950
+)
+"Steps.ml" 49 942 960 "Steps.ml" 49 942 978
+call(
+  stack
+)
+type(
+  unit
+)
+"Steps.ml" 49 942 979 "Steps.ml" 49 942 991
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"Steps.ml" 49 942 992 "Steps.ml" 49 942 995
+type(
+  string
+)
+"Steps.ml" 49 942 979 "Steps.ml" 49 942 995
+call(
+  stack
+)
+type(
+  unit
+)
+"Steps.ml" 49 942 996 "Steps.ml" 49 942 1009
+type(
+  (int * int * int) list -> unit
+)
+ident(
+  int_ref printMyResult "Steps.ml" 46 855 863 "Steps.ml" 46 855 876
+)
+"Steps.ml" 49 942 1010 "Steps.ml" 49 942 1014
+type(
+  (int * int * int) list
+)
+ident(
+  int_ref tail "Steps.ml" 49 942 952 "Steps.ml" 49 942 956
+)
+"Steps.ml" 49 942 996 "Steps.ml" 49 942 1014
+call(
+  tail
+)
+type(
+  unit
+)
+"Steps.ml" 49 942 979 "Steps.ml" 49 942 1014
+type(
+  unit
+)
+"Steps.ml" 49 942 960 "Steps.ml" 49 942 1014
+type(
+  unit
+)
+"Steps.ml" 47 889 891 "Steps.ml" 49 942 1014
+type(
+  unit
+)
+"Steps.ml" 51 1018 1018 "Steps.ml" 51 1018 1031
+type(
+  (int * int * int) list -> unit
+)
+ident(
+  int_ref printMyResult "Steps.ml" 46 855 863 "Steps.ml" 46 855 876
+)
+"Steps.ml" 51 1018 1032 "Steps.ml" 51 1018 1042
+type(
+  (int * int * int) list
+)
+ident(
+  int_ref theResults "Steps.ml" 44 810 814 "Steps.ml" 44 810 824
+)
+"Steps.ml" 51 1018 1018 "Steps.ml" 51 1018 1042
+call(
+  stack
+)
+type(
+  unit
+)

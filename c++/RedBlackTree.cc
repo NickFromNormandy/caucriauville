@@ -76,8 +76,11 @@ void Node::PrintColor(void)
 
 void Node::Print(void)
 {
+
   std::cout << "Value:" << m_value << "(Node:";
+
   PrintColor();
+
   if (m_left_child)
   {
     std::cout << "\nLeft:" <<  "(";
@@ -91,6 +94,7 @@ void Node::Print(void)
     m_right_child->Print();
     std::cout << ")";
   }
+
   std::cout << ")";
   
 }
